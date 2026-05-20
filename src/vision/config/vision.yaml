@@ -1,5 +1,5 @@
 camera:
-  type: realsense
+  type: d-robotics
   intrin:
     fx: 642.414673
     fy: 641.951172
@@ -53,7 +53,7 @@ segmentation_model:
   model_path: ./src/vision/model/best_seg_orin_10.3.engine
   confidence_threshold: 0.3
   nms_threshold: 0.9
-use_depth: true
+use_depth: false  # d-robotics has no depth channel; depth estimation uses ball radius geometry
 ball_pose_estimator:
   use_depth: false
   radius: 0.091

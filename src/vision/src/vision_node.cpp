@@ -166,7 +166,9 @@ void VisionNode::Init(const std::string &cfg_template_path, const std::string &c
     bool save_data_nonstationary = as_or<bool>(node["misc"]["save_data_nonstationary"], true);
     std::string log_root = std::string(std::getenv("HOME")) + "/Workspace/vision_log/" + getTimeString();
     data_logger_ = save_data_ ? std::make_shared<DataLogger>(log_root, save_data_nonstationary) : nullptr;
-    data_logger_->LogYAML(node, "vision_local.yaml");
+    if (data_logger_) {
+        data_logger_->LogYAML(node, "vision_local.yaml");
+    }
     seg_data_syncer_ = std::make_shared<DataSyncer>(false);
 
     // init robot color classifier
@@ -207,7 +209,7 @@ void VisionNode::Init(const std::string &cfg_template_path, const std::string &c
         depth_topic = "/zed/zed_node/depth/depth_registered";
     } else if (camera_type_ == "d-robotics") {
         color_topic = "/image_left_raw";
-        depth_topic = "/image_left_raw/camera_info";
+        depth_topic = "";  // d-robotics has no depth image; use_depth must be false
     } else if (camera_type_ == "orbbec") {
         color_topic = "/camera/color/image_raw";
         depth_topic = "/camera/depth/image_raw";
@@ -232,21 +234,12 @@ void VisionNode::Init(const std::string &cfg_template_path, const std::string &c
 
     it_ = std::make_shared<image_transport::ImageTransport>(shared_from_this());
     image_transport::TransportHints hints(this, "compressed");
-    // Subscribe to both raw and compressed image topics for color
-    if (camera_type_.find("compressed") != std::string::npos) {
-        color_sub_ = it_->subscribe(color_topic, 1, &VisionNode::ColorCallback, this, &hints, sub_opt_1);
-    } else {
-        color_sub_ = it_->subscribe(color_topic, 1, &VisionNode::ColorCallback, this, nullptr, sub_opt_1);
-    } 
-    if (use_depth_) {
-        depth_sub_ = it_->subscribe(depth_topic, 1, &VisionNode::DepthCallback, this, nullptr, sub_opt_3);
-    }
     if (camera_type_.find("compressed") != std::string::npos) {
         color_sub_ = it_->subscribe(color_topic, 2, &VisionNode::ColorCallback, this, &hints, sub_opt_1);
     } else {
         color_sub_ = it_->subscribe(color_topic, 2, &VisionNode::ColorCallback, this, nullptr, sub_opt_1);
-    } 
-    if (use_depth_) {
+    }
+    if (use_depth_ && !depth_topic.empty()) {
         depth_sub_ = it_->subscribe(depth_topic, 2, &VisionNode::DepthCallback, this, nullptr, sub_opt_3);
     }
 
@@ -453,10 +446,6 @@ void VisionNode::ProcessData(SyncedDataBlock &synced_data, vision_interface::msg
     ball_msg.confidence = 0;
     for (auto &detection : filtered_detections) {
         if (detection.class_name == "Ball" && detection.confidence > ball_msg.confidence) {
-            if (detection.confidence <= ball_msg.confidence) {
-               continue;
-            }
-
             auto pose_estimator = get_estimator(detection.class_name);
             Pose pose_obj_by_color = pose_estimator->EstimateByColor(p_eye2base, detection, color);
             auto value = pose_obj_by_color.getTranslationVec();
