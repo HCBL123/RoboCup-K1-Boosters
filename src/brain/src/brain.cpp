@@ -41,7 +41,8 @@ Brain::Brain() : rclcpp::Node("brain_node")
     declare_parameter<double>("robot.vy_limit", 0.4);
     declare_parameter<double>("robot.vtheta_limit", 1.0);
 
-    declare_parameter<double>("strategy.ball_confidence_threshold", 50.0);   
+    // declare_parameter<double>("strategy.ball_confidence_threshold", 50.0); // old: mismatch with config.yaml (30.0) — silent wrong behavior on config load failure
+    declare_parameter<double>("strategy.ball_confidence_threshold", 30.0);
     declare_parameter<double>("strategy.ball_memory_timeout", 3.0);
     declare_parameter<double>("strategy.tm_ball_dist_threshold", 3.0);
     declare_parameter<bool>("strategy.limit_near_ball_speed", true);
@@ -93,6 +94,7 @@ Brain::Brain() : rclcpp::Node("brain_node")
     declare_parameter<double>("obstacle_avoidance.freekick_start_placing_safe_distance", 0.5);
     declare_parameter<double>("obstacle_avoidance.freekick_start_placing_avoid_secs", 1.5);
     declare_parameter<double>("obstacle_avoidance.obstacle_memory_msecs", 500.0);
+    declare_parameter<double>("obstacle_avoidance.robot_memory_msecs", 500.0);
     declare_parameter<bool>("obstacle_avoidance.avoid_during_chase", false);
     declare_parameter<double>("obstacle_avoidance.chase_ao_safe_dist", 2.0);
     declare_parameter<bool>("obstacle_avoidance.avoid_during_kick", false);
@@ -715,7 +717,9 @@ void Brain::updateRobotMemory() {
         auto r = robots[i];
 
 
-        if (msecsSince(r.timePoint) > 1000)  continue;
+        // if (msecsSince(r.timePoint) > 1000) continue; // old: hardcoded 1000ms caused ghost-robot artifacts 2x longer than obstacle memory
+        const double robotMemMsecs = get_parameter("obstacle_avoidance.robot_memory_msecs").as_double();
+        if (msecsSince(r.timePoint) > robotMemMsecs) continue;
 
 
         updateRelativePos(r);
@@ -884,7 +888,8 @@ void Brain::updateCostToKick() {
     }
     
     double lastCost = data->tmMyCost;
-    data->tmMyCost = lastCost * 0.8 + cost * 0.2;
+    // data->tmMyCost = lastCost * 0.8 + cost * 0.2; // old: alpha=0.2 too slow — fall (+15 cost) took ~500ms to propagate, delaying role handoff
+    data->tmMyCost = lastCost * 0.65 + cost * 0.35; // faster fall/recovery propagation; threshold raised to 4.0 to prevent jitter at new alpha
     log_(format("lastCost: %.1f, newCost: %.1f, smoothCost: %.1f", lastCost, cost, data->tmMyCost));
 
     return;

@@ -81,7 +81,8 @@ brain_node:
       cooperation:
         enable_role_switch: true
         # ball_control_cost_threshold: 5.0 # old — too wide eligibility window; any robot with cost<5.0 could seize lead, causing oscillation when both robots hovered near 5.0
-        ball_control_cost_threshold: 3.5 # P5: narrower window — only clearly lower-cost robot triggers transfer
+        # ball_control_cost_threshold: 3.5 # old — tuned for alpha=0.2; too tight at alpha=0.35 (faster EMA causes jitter)
+        ball_control_cost_threshold: 4.0 # raised with EMA alpha 0.2→0.35 to preserve oscillation resistance at faster propagation
 
     obstacle_avoidance:
       depth_sample_step: 16 
@@ -100,7 +101,8 @@ brain_node:
       enable_freekick_avoid: true 
       freekick_start_placing_safe_distance: 0.5 
       freekick_start_placing_avoid_secs: 1.5 
-      obstacle_memory_msecs: 500. 
+      obstacle_memory_msecs: 500.
+      robot_memory_msecs: 500.
       avoid_during_kick: false 
       kick_ao_safe_dist: 1.5 
       kick_ao_use_shoot: false 

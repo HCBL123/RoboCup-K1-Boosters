@@ -1074,8 +1074,9 @@ NodeStatus StrikerDecide::tick() {
         else { // kickType == kick
             double threatThreshold;
             brain->get_parameter("strategy.shoot.threat_threshold", threatThreshold);
-            if (threatLevel < threatThreshold) newDecision = "safe_shoot";
-            else newDecision = "kick";
+            // if (threatLevel < threatThreshold) newDecision = "safe_shoot"; // old: no XML handler for safe_shoot → striker froze near ball when enable_shoot was on
+            // safe_shoot merged into kick — Kick::onStart() already stabilizes on low threat
+            newDecision = "kick";
         }        
         color = 0x00FF00FF;
         brain->data->isFreekickKickingOff = false; // 只要进一次 kick, 就不算是 kickoff 阶段了.
@@ -2429,7 +2430,9 @@ NodeStatus SelfLocate2X::tick()
 
     // 理论与实际的差值
     double dx = - (p0.posToField.x + p1.posToField.x) / 2.0;
-    double dy = - (p1.posToField.y + p1.posToField.y) / 2.0;
+    // double dy = - (p1.posToField.y + p1.posToField.y) / 2.0; // BUG: p1 used twice, y-correction always wrong
+
+    double dy = - (p0.posToField.y + p1.posToField.y) / 2.0;
     double drift = norm(dx, dy);
 
     if (drift > maxDrift) { // 修正量过大

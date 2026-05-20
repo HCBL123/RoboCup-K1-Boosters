@@ -32,8 +32,9 @@
                      <!-- <CamTrackBall /> -->
                      <SubTree ID="CamFindAndTrackBall" _autoremap="true" />
                      <GoalieDecide decision_out="{decision}" decision_in="{decision}" chase_threshold="1.0" />
-                     <GoToGoalBlockingPosition _while="decision=='find'" theta_tolerance="0.2" />
-                     <!-- <SubTree ID="FindBall" _while="decision=='find'" _autoremap="true" /> -->
+                     <!-- <GoToGoalBlockingPosition _while="decision=='find'" theta_tolerance="0.2" /> -->
+                     <!-- old: keeper stayed at post motionless when ball was lost; ball behind keeper → never reacquired -->
+                     <SubTree ID="FindBall" _while="decision=='find'" _autoremap="true" />
 
                      <GoToGoalBlockingPosition _while="decision == 'retreat'" theta_tolerance="0.2" />
                      <!-- <Chase   _while="decision == 'chase'"  vx_limit="1.5"  vy_limit="0.4"  vtheta_limit="1.0"  dist="0.8"/> -->
@@ -46,11 +47,12 @@
                      </Sequence>
                      <!-- RLVisionKick node removed in open-source version -->
                   </Sequence>
-                  <ReactiveSequence _while="goalie_mode == 'guard'">
+                  <!-- goalie_mode=='guard' branch removed: no code ever sets goalie_mode to 'guard', branch was permanently dead -->
+                  <!-- <ReactiveSequence _while="goalie_mode == 'guard'">
                      <SubTree ID="CamFindAndTrackBall" _autoremap="true" />
                      <GoToReadyPosition _while="!ball_location_known" vx_limit="0.7" />
                      <GoToGoalBlockingPosition _while="ball_location_known" theta_tolerance="0.2" />
-                  </ReactiveSequence>
+                  </ReactiveSequence> -->
 
                </Sequence>
             </ReactiveSequence>
