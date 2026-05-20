@@ -2646,7 +2646,9 @@ void Brain::updateRelativePos(GameObject &obj) {
     obj.posToRobot.y = pr.y;
     obj.range = norm(obj.posToRobot.x, obj.posToRobot.y);
     obj.yawToRobot = atan2(obj.posToRobot.y, obj.posToRobot.x);
-    obj.pitchToRobot = asin(config->robotHeight / obj.range);
+    // asin(h/range) → NaN when range==0; atan2(h, range) → π/2 (safe)
+    // obj.pitchToRobot = asin(config->robotHeight / obj.range);
+    obj.pitchToRobot = atan2(config->robotHeight, obj.range);
 }
 
 void Brain::updateFieldPos(GameObject &obj) {
@@ -2659,7 +2661,8 @@ void Brain::updateFieldPos(GameObject &obj) {
     obj.posToField.y = pf.y;
     obj.range = norm(obj.posToRobot.x, obj.posToRobot.y);
     obj.yawToRobot = atan2(obj.posToRobot.y, obj.posToRobot.x);
-    obj.pitchToRobot = asin(config->robotHeight / obj.range);
+    // obj.pitchToRobot = asin(config->robotHeight / obj.range); // NaN when range==0
+    obj.pitchToRobot = atan2(config->robotHeight, obj.range);
 }
 
 void Brain::depthImageCallback(const sensor_msgs::msg::Image &msg)
