@@ -215,7 +215,11 @@ public:
     static PortsList providedPorts() {
         return {
             InputPort<double>("rad", 0, ""),
-            InputPort<bool>("towards_ball", false, "")
+            InputPort<bool>("towards_ball", false, ""),
+            // P8: use yawToRobot (body-frame, recomputed each tick) instead of stale pixel bounding box
+            InputPort<bool>("use_field_yaw", false, ""),
+            // P11: skip turn if ball already within this angle (rad); -1 = disabled
+            InputPort<double>("skip_if_within_rad", -1.0, "")
         };
     }
     NodeStatus onStart() override;

@@ -1735,9 +1735,36 @@ NodeStatus TurnOnSpot::onStart()
     bool towardsBall = false;
     _angle = getInput<double>("rad").value();
     getInput("towards_ball", towardsBall);
+
     if (towardsBall) {
-        double ballPixX = (brain->data->ball.boundingBox.xmin + brain->data->ball.boundingBox.xmax) / 2;
-        _angle = fabs(_angle) * (ballPixX < brain->config->camPixX / 2 ? 1 : -1);
+        bool useFieldYaw = false;
+        getInput("use_field_yaw", useFieldYaw);
+
+        // P11: skip turn entirely if ball already within threshold angle
+        double skipThreshold = -1.0;
+        getInput("skip_if_within_rad", skipThreshold);
+        if (skipThreshold > 0 && brain->data->ball.timePoint.nanoseconds() != 0) {
+            double yaw = brain->data->ball.yawToRobot;
+            if (fabs(yaw) < skipThreshold) {
+                brain->client->setVelocity(0, 0, 0);
+                return NodeStatus::SUCCESS;
+            }
+        }
+
+        if (useFieldYaw && brain->data->ball.timePoint.nanoseconds() != 0) {
+            // P8: use body-frame yawToRobot (recomputed each tick from persisted posToField,
+            // survives ball_memory_timeout and head movement — unlike stale pixel bounding box)
+            double yaw = brain->data->ball.yawToRobot;
+            // adaptive angle: turn only as far as needed, min 0.4 rad to ensure scan overlap
+            _angle = std::copysign(
+                std::max(0.4, std::min(fabs(_angle), fabs(yaw))),
+                yaw
+            );
+        } else {
+            // old: pixel bounding box — kept as fallback when use_field_yaw=false or ball never seen
+            double ballPixX = (brain->data->ball.boundingBox.xmin + brain->data->ball.boundingBox.xmax) / 2;
+            _angle = fabs(_angle) * (ballPixX < brain->config->camPixX / 2 ? 1 : -1);
+        }
     }
 
     brain->client->setVelocity(0, 0, _angle, false, false, true);
@@ -3317,12 +3344,21 @@ NodeStatus GoToFindBallFallback::tick()
     getInput("vy_limit", vyLimit);
 
     double tx, ty;
-    // rank-0: hold center to cover own-half ball; rank-1: advance to opponent half to cover forward zone
+    // P12: bias fallback zone toward last known ball X (persists past ball_memory_timeout)
+    // rank-Y split preserved to prevent both robots converging on same point
+    // old: rank-0 → (0.0, 0.5), rank-1 → (1.5, -0.5) — static regardless of ball position
+    double fdHalf = brain->config->fieldDimensions.length / 2.0;
+    bool ballEverSeen = (brain->data->ball.timePoint.nanoseconds() != 0);
+    double ballX = ballEverSeen ? brain->data->ball.posToField.x : 0.0;
+    double baseX = std::max(-fdHalf + 1.0, std::min(fdHalf - 1.0, ballX));
+
     if (brain->data->myStrikerIDRank == 0) {
-        tx = 0.0;
+        // rank-0: 1m behind ball X (own-half bias), same Y as before
+        tx = std::max(-fdHalf + 1.0, baseX - 1.0);
         ty = 0.5;
     } else {
-        tx = 1.5;
+        // rank-1: 0.5m ahead of ball X (opponent-half bias), same Y as before
+        tx = std::min(fdHalf - 1.0, baseX + 0.5);
         ty = -0.5;
     }
 
@@ -3340,6 +3376,12 @@ NodeStatus GoToBallLastPos::onStart()
     if (brain->msecsSince(brain->data->ball.timePoint) > staleMaxMsec) return NodeStatus::FAILURE;
 
     _targetPos = brain->data->ball.posToField;
+    // M1: clamp to field interior so robot doesn't walk out of bounds toward a stale out-of-bounds detection
+    // old: no clamping — raw posToField used directly
+    double fdHalfX = brain->config->fieldDimensions.length / 2.0;
+    double fdHalfY = brain->config->fieldDimensions.width / 2.0;
+    _targetPos.x = std::max(-fdHalfX + 0.5, std::min(fdHalfX - 0.5, _targetPos.x));
+    _targetPos.y = std::max(-fdHalfY + 0.5, std::min(fdHalfY - 0.5, _targetPos.y));
     return NodeStatus::RUNNING;
 }
 

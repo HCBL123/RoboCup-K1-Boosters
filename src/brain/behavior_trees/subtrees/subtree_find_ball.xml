@@ -3,23 +3,36 @@
 <root BTCPP_format="4" >
   <BehaviorTree ID="FindBall">
      <Sequence name="root">
+        <!-- Step 1: out-of-bounds guard + initial camera sweep -->
         <ReactiveSequence>
             <GoBackInField />
             <CamFastScan />
         </ReactiveSequence>
-        <TurnOnSpot rad="3.14"  towards_ball="true"/>
+        <!-- Step 2: walk toward last known ball field pos immediately while data is fresh -->
+        <!-- P9: moved here from step 4 (was unreachable — steps 1-3 consumed ~10s, exceeding stale_max_msec=5s) -->
+        <!-- P9: stale_max_msec raised to 12000 to cover fall+standup (~8s) + brief travel time -->
+        <!-- ForceSuccess: FAILURE (ball never seen OR >12s stale) must not collapse Sequence — -->
+        <!--   step 3 (TurnOnSpot), step 4 (CamFastScan), step 5 (GoToFindBallFallback) still need to run -->
+        <!-- Exits early on ballDetected in onRunning() -->
+        <!-- old: <GoToBallLastPos stale_max_msec="5000" arrive_dist="0.5" vx_limit="0.7" vy_limit="0.4" /> at step 4 -->
+        <ForceSuccess>
+            <GoToBallLastPos stale_max_msec="12000" arrive_dist="0.5" vx_limit="0.7" vy_limit="0.4" />
+        </ForceSuccess>
+        <!-- Step 3: turn toward last known ball direction + second camera sweep -->
+        <!-- P8/P11 ports (use_field_yaw, skip_if_within_rad) active — see brain_tree.cpp TurnOnSpot::onStart() -->
+        <TurnOnSpot rad="3.14" towards_ball="true" use_field_yaw="true" skip_if_within_rad="0.52"/>
         <ReactiveSequence>
             <GoBackInField />
             <CamFastScan />
         </ReactiveSequence>
-        <!-- Walk toward last known ball field position before falling back to default search zone -->
-        <!-- Fails immediately if ball was never seen or position is stale (>5s) -->
-        <GoToBallLastPos stale_max_msec="5000" arrive_dist="0.5" vx_limit="0.7" vy_limit="0.4" />
-        <!-- Fallback: rank-0 holds center, rank-1 advances to opponent half; avoids READY-state conflict -->
+        <!-- Step 4: ranked fallback zones biased by last ball X (P12), short debounce sleep -->
+        <!-- Fallback: rank-0 holds center/ball-X area, rank-1 advances to opponent half -->
         <!-- old: <GoToReadyPosition vx_limit="0.7" /> + <Sleep msec="5000" /> — sent both robots to own half -->
+        <!-- P10: Sleep reduced 2500→500ms; robot re-acquires ball within one loop if it appears -->
+        <!-- old: <Sleep msec="2500" /> -->
         <ReactiveSequence>
           <GoToFindBallFallback vx_limit="0.7" vy_limit="0.5" />
-          <Sleep msec="2500" />
+          <Sleep msec="500" />
         </ReactiveSequence>
       </Sequence>
   </BehaviorTree>
