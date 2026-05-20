@@ -188,6 +188,26 @@ private:
     Brain *brain;
 };
 
+class GoToBallLastPos : public StatefulActionNode
+{
+public:
+    GoToBallLastPos(const string &name, const NodeConfig &config, Brain *_brain) : StatefulActionNode(name, config), brain(_brain) {}
+    static PortsList providedPorts() {
+        return {
+            InputPort<double>("stale_max_msec", 5000, ""),
+            InputPort<double>("arrive_dist", 0.5, ""),
+            InputPort<double>("vx_limit", 0.7, ""),
+            InputPort<double>("vy_limit", 0.4, ""),
+        };
+    }
+    NodeStatus onStart() override;
+    NodeStatus onRunning() override;
+    void onHalted() override;
+private:
+    Point _targetPos;
+    Brain *brain;
+};
+
 class TurnOnSpot : public StatefulActionNode
 {
 public:
@@ -593,6 +613,20 @@ public:
         return {
             InputPort<double>("dist_tolerance", 0.5, ""), InputPort<double>("theta_tolerance", 0.1, ""),
             InputPort<double>("vx_limit", 1.2, ""), InputPort<double>("vy_limit", 0.5, ""),
+        };
+    }
+    BT::NodeStatus tick() override;
+private:
+    Brain *brain;
+};
+
+class GoToFindBallFallback : public SyncActionNode
+{
+public:
+    GoToFindBallFallback(const std::string &name, const NodeConfig &config, Brain *_brain) : SyncActionNode(name, config), brain(_brain) {}
+    static BT::PortsList providedPorts() {
+        return {
+            InputPort<double>("vx_limit", 0.7, ""), InputPort<double>("vy_limit", 0.5, ""),
         };
     }
     BT::NodeStatus tick() override;

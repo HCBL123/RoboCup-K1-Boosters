@@ -62,6 +62,8 @@ void BrainTree::init()
     REGISTER_BUILDER(StepOnSpot)
     REGISTER_BUILDER(GoToFreekickPosition)
     REGISTER_BUILDER(GoToReadyPosition)
+    REGISTER_BUILDER(GoToFindBallFallback)
+    REGISTER_BUILDER(GoToBallLastPos)
     REGISTER_BUILDER(GoToGoalBlockingPosition)
     REGISTER_BUILDER(TurnOnSpot)
     REGISTER_BUILDER(MoveToPoseOnField)
@@ -3303,6 +3305,67 @@ NodeStatus GoToReadyPosition::tick()
 
     brain->client->moveToPoseOnField2(tx, ty, ttheta, longRangeThreshold, turnThreshold, vxLimit, vyLimit, vthetaLimit, distTolerance / 1.5, distTolerance / 1.5, thetaTolerance, avoidObstacle);
     return NodeStatus::SUCCESS;
+}
+
+NodeStatus GoToFindBallFallback::tick()
+{
+    double vxLimit, vyLimit;
+    getInput("vx_limit", vxLimit);
+    getInput("vy_limit", vyLimit);
+
+    double tx, ty;
+    // rank-0: hold center to cover own-half ball; rank-1: advance to opponent half to cover forward zone
+    if (brain->data->myStrikerIDRank == 0) {
+        tx = 0.0;
+        ty = 0.5;
+    } else {
+        tx = 1.5;
+        ty = -0.5;
+    }
+
+    brain->client->moveToPoseOnField2(tx, ty, 0.0, 1.0, 0.4, vxLimit, vyLimit, 1.5, 0.4, 0.4, 0.3, true);
+    return NodeStatus::SUCCESS;
+}
+
+NodeStatus GoToBallLastPos::onStart()
+{
+    double staleMaxMsec;
+    getInput("stale_max_msec", staleMaxMsec);
+
+    // never-seen guard: timePoint is zero-initialized until first detection
+    if (brain->data->ball.timePoint.nanoseconds() == 0) return NodeStatus::FAILURE;
+    if (brain->msecsSince(brain->data->ball.timePoint) > staleMaxMsec) return NodeStatus::FAILURE;
+
+    _targetPos = brain->data->ball.posToField;
+    return NodeStatus::RUNNING;
+}
+
+NodeStatus GoToBallLastPos::onRunning()
+{
+    if (brain->data->ballDetected) {
+        brain->client->setVelocity(0, 0, 0);
+        return NodeStatus::SUCCESS;
+    }
+
+    double arriveDist, vxLimit, vyLimit;
+    getInput("arrive_dist", arriveDist);
+    getInput("vx_limit", vxLimit);
+    getInput("vy_limit", vyLimit);
+
+    auto robotPos = brain->data->robotPoseToField;
+    double dist = norm(_targetPos.x - robotPos.x, _targetPos.y - robotPos.y);
+    if (dist < arriveDist) {
+        brain->client->setVelocity(0, 0, 0);
+        return NodeStatus::SUCCESS;
+    }
+
+    brain->client->moveToPoseOnField2(_targetPos.x, _targetPos.y, 0.0, 1.0, 0.4, vxLimit, vyLimit, 1.5, arriveDist / 1.5, arriveDist / 1.5, 0.3, true);
+    return NodeStatus::RUNNING;
+}
+
+void GoToBallLastPos::onHalted()
+{
+    brain->client->setVelocity(0, 0, 0);
 }
 
 NodeStatus GoBackInField::tick()

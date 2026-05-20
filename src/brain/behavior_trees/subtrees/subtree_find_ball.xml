@@ -12,9 +12,14 @@
             <GoBackInField />
             <CamFastScan />
         </ReactiveSequence>
+        <!-- Walk toward last known ball field position before falling back to default search zone -->
+        <!-- Fails immediately if ball was never seen or position is stale (>5s) -->
+        <GoToBallLastPos stale_max_msec="5000" arrive_dist="0.5" vx_limit="0.7" vy_limit="0.4" />
+        <!-- Fallback: rank-0 holds center, rank-1 advances to opponent half; avoids READY-state conflict -->
+        <!-- old: <GoToReadyPosition vx_limit="0.7" /> + <Sleep msec="5000" /> — sent both robots to own half -->
         <ReactiveSequence>
-          <GoToReadyPosition  vx_limit="0.7" />
-          <Sleep msec="5000" />
+          <GoToFindBallFallback vx_limit="0.7" vy_limit="0.5" />
+          <Sleep msec="2500" />
         </ReactiveSequence>
       </Sequence>
   </BehaviorTree>
