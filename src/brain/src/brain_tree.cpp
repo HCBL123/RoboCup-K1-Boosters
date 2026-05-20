@@ -1031,13 +1031,18 @@ NodeStatus StrikerDecide::tick() {
         brain->data->tmMyCostRank == 0 &&
         !brain->tree->getEntry<bool>("ball_out") &&
         !brain->data->lose_ball &&
+        // P3: add kickoff guard — RL kick should not fire on first touch; isFreekickKickingOff gate already on kick branch (line 1057) but missing here
+        !brain->data->isFreekickKickingOff &&
         brain->data->tmMyCost < 7.0 &&
         ballRange < autoVisualKickEnableDistMax &&
         ballRange > autoVisualKickEnableDistMin &&
         fabs(ballYaw) < autoVisualKickEnableAngle * 1.3 &&
-        ball.posToField.x > brain->config->fieldDimensions.length / 2 - 14.3 &&
+        // P3: old x-guard was `length/2 - 14.3 = -7.22` on adult_size field — unconditionally true (dead code); robot could enter RL kick from own penalty area
+        // ball.posToField.x > brain->config->fieldDimensions.length / 2 - 14.3 &&
+        ball.posToField.x > -1.0 && // P3: actual half-field gate; blocks RL kick from own half
         fabs(ball.posToField.y) < 5.0 &&
-        brain->data->robotPoseToField.x > brain->config->fieldDimensions.length / 2 - 14.3 &&
+        // brain->data->robotPoseToField.x > brain->config->fieldDimensions.length / 2 - 14.3 && // P3: same dead guard
+        brain->data->robotPoseToField.x > -1.0 && // P3: robot must also be in opponent half
         fabs(brain->data->robotPoseToField.y) < 5.0
     ) {
         newDecision = "auto_visual_kick";
@@ -1142,16 +1147,16 @@ NodeStatus GoalieDecide::tick()
         newDecision = "retreat";
         color = 0xFF00FFFF;
     }
-    else if (
-                enableAutoVisualKick &&
-                brain->data->ball.range < autoVisualKickEnableDistMax &&
-                brain->data->ball.range > autoVisualKickEnableDistMin &&
-                fabs(brain->data->ball.yawToRobot) < autoVisualKickEnableAngle / 2 &&
-                brain->isFrontRangeClear(-autoVisualKickObstacleAngleThreshold / 2, autoVisualKickObstacleAngleThreshold / 2, autoVisualKickObstacleDistThreshold, 0.035)
-            ) {
-    // 自动视觉踢球分支已删除
-        color = 0xFF00FFFF;
-    }
+    // else if (
+    //             enableAutoVisualKick &&
+    //             brain->data->ball.range < autoVisualKickEnableDistMax &&
+    //             brain->data->ball.range > autoVisualKickEnableDistMin &&
+    //             fabs(brain->data->ball.yawToRobot) < autoVisualKickEnableAngle / 2 &&
+    //             brain->isFrontRangeClear(-autoVisualKickObstacleAngleThreshold / 2, autoVisualKickObstacleAngleThreshold / 2, autoVisualKickObstacleDistThreshold, 0.035)
+    //         ) {
+    // // 自动视觉踢球分支已删除 — orphaned shell: body was deleted but condition remained; if triggered, newDecision stayed "" → goalie froze. Safe to remove: enable_auto_visual_defend is false in config.
+    //     color = 0xFF00FFFF;
+    // }
     else if (ballRange > chaseRangeThreshold * (lastDecision == "chase" ? 0.9 : 1.0))
     {
         newDecision = "chase";
@@ -2096,7 +2101,8 @@ bool SelfLocateLocal::_doubleX() {
 
     // 观察到的球场中心点的坐标
     double xc = (p0.posToField.x + p1.posToField.x) / 2.0;
-    double yc = (p1.posToField.y + p1.posToField.y) / 2.0;
+    // double yc = (p1.posToField.y + p1.posToField.y) / 2.0; // Bug: used p1 twice — yc was always p1.y, not the midpoint
+    double yc = (p0.posToField.y + p1.posToField.y) / 2.0;
 
     double maxDrift = 2.0;
     if (norm(xc, yc) > maxDrift) {

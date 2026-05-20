@@ -28,16 +28,22 @@ brain_node:
     strategy:
       ball_confidence_threshold: 30.0 
       ball_confidence_decay_rate: 3.0 
-      enable_stable_kick: false 
+      # enable_stable_kick: false # old value — kicks without stabilization, inaccurate under low pressure
+      enable_stable_kick: true # P4: stabilizes 1s when threat<0.5 (opponent >2.5m); bypassed under pressure
       ball_memory_timeout: 3.0 
       tm_ball_dist_threshold: 1.5  
-      limit_near_ball_speed: false 
-      near_ball_speed_limit: 0.6 
-      near_ball_range: 2.0 
+      # limit_near_ball_speed: false # old — robot approached at full 0.9 m/s, overshooting ball
+      limit_near_ball_speed: true # P2: taper speed in final approach to avoid overshoot
+      # near_ball_speed_limit: 0.6 # old
+      near_ball_speed_limit: 0.45 # P2: slower final approach
+      # near_ball_range: 2.0 # old — taper started too far out, risked contested-ball hesitation
+      near_ball_range: 1.2 # P2 (adjusted by sim): matches chase_threshold, taper active only in final 0.3m before Adjust handoff
       soft_kickoff: false 
       soft_kickoff_speed: 0.3 
-      kick_range: 1.0 
-      kick_theta_range: 0.2 
+      # kick_range: 1.0 # old — created only 0.1m adjust band, causing rapid kick/adjust oscillation
+      kick_range: 0.7 # P1: clean 0.5m adjust band (0.7–1.2m); closer contact = more accurate kicks
+      # kick_theta_range: 0.2 # old
+      kick_theta_range: 0.15 # P4: tighter angle gate ensures robot is better-aligned before kicking
       abort_kick_when_ball_moved: true 
       abort_kick_ball_move_threshold: 0.3 
       abort_shoot_when_ball_moved: true  
@@ -67,12 +73,15 @@ brain_node:
         ymax: 0.3 
       enable_auto_visual_kick: true
       auto_visual_kick_enable_dist_min: 0.2
-      auto_visual_kick_enable_dist_max: 4.0
-      auto_visual_kick_enable_angle: 0.8
+      # auto_visual_kick_enable_dist_max: 4.0 # old — RL kick fired from too far, before clear shooting lane
+      auto_visual_kick_enable_dist_max: 2.5 # P3: fire only from mid-field forward, better RL input distribution
+      # auto_visual_kick_enable_angle: 0.8 # old — effective 60° gate, too wide for RL policy alignment
+      auto_visual_kick_enable_angle: 0.5 # P3: effective ~37°, forces better goal alignment before RL kick
       enable_auto_visual_defend: false 
       cooperation:
-        enable_role_switch: true 
-        ball_control_cost_threshold: 5.0 
+        enable_role_switch: true
+        # ball_control_cost_threshold: 5.0 # old — too wide eligibility window; any robot with cost<5.0 could seize lead, causing oscillation when both robots hovered near 5.0
+        ball_control_cost_threshold: 3.5 # P5: narrower window — only clearly lower-cost robot triggers transfer
 
     obstacle_avoidance:
       depth_sample_step: 16 
@@ -100,8 +109,10 @@ brain_node:
       always_turn_left: false 
 
     locator:
-      min_marker_count: 5 
-      max_residual: 0.35
+      # min_marker_count: 5 # old — rejected valid updates when only 4 markers visible (corners, partial occlusion)
+      min_marker_count: 4 # P6: more localization attempts, especially in corners
+      # max_residual: 0.35 # old — accepted noisier pose estimates
+      max_residual: 0.25 # P6: tighter quality gate; verify residual distribution in logs before match deployment
 
     enable_com: True  # 是否开启队友间通信，建议打开
 
