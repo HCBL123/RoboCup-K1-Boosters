@@ -171,8 +171,8 @@ void CalibrationNode::Init(const std::string cfg_path, bool is_offline, std::str
         intrin_topic = "/camera/color/camera_info";
     } else {
         // realsense
-        color_topic = "/image_left_raw"";
-        intrin_topic = "image_left_raw/camera_info";
+        color_topic = "/image_left_raw";
+        intrin_topic = "/image_left_raw/camera_info";
     }
 
     it_ = std::make_shared<image_transport::ImageTransport>(shared_from_this());
