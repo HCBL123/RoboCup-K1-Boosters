@@ -1,0 +1,5 @@
+[  2%] Built target booster_msgs__cpp
+[ 12%] Built target booster_msgs__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_booster_msgs
+[ 14%] Generating C introspection for ROS interfaces
+[ 17%] Generating C type support dispatch for ROS interfaces

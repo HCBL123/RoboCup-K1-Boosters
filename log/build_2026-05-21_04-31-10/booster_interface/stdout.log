@@ -1,0 +1,14 @@
+[  1%] Generating C code for ROS interfaces
+[  1%] Built target ament_cmake_python_copy_booster_interface
+[  1%] Built target booster_interface__cpp
+[  1%] Generating C++ type support for eProsima Fast-RTPS
+[  2%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/motor_state__type_support.cpp.o
+running egg_info
+creating booster_interface.egg-info
+writing booster_interface.egg-info/PKG-INFO
+writing dependency_links to booster_interface.egg-info/dependency_links.txt
+writing top-level names to booster_interface.egg-info/top_level.txt
+writing manifest file 'booster_interface.egg-info/SOURCES.txt'
+reading manifest file 'booster_interface.egg-info/SOURCES.txt'
+writing manifest file 'booster_interface.egg-info/SOURCES.txt'
+[  2%] Built target ament_cmake_python_build_booster_interface_egg

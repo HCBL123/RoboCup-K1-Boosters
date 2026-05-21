@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/cmake_install.cmake",
+		"/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/booster_msgs__py/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

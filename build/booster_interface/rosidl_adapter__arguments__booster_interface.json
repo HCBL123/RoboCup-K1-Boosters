@@ -1,0 +1,16 @@
+{
+  "package_name": "booster_interface",
+  "non_idl_tuples": [
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface:msg/BoosterApiReqMsg.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface:msg/BoosterApiRespMsg.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface:msg/MotorState.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface:msg/MotorCmd.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface:msg/LowCmd.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface:msg/ImuState.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface:msg/LowState.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface:msg/RawBytesMsg.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface:msg/Odometer.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface:msg/RemoteControllerState.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface:srv/RpcService.srv"
+  ]
+}

@@ -1,0 +1,144 @@
+[0.000000] (-) TimerEvent: {}
+[0.000075] (booster_interface) JobQueued: {'identifier': 'booster_interface', 'dependencies': OrderedDict()}
+[0.000123] (booster_msgs) JobQueued: {'identifier': 'booster_msgs', 'dependencies': OrderedDict()}
+[0.000204] (game_controller_interface) JobQueued: {'identifier': 'game_controller_interface', 'dependencies': OrderedDict()}
+[0.000217] (vision_interface) JobQueued: {'identifier': 'vision_interface', 'dependencies': OrderedDict()}
+[0.000227] (brain) JobQueued: {'identifier': 'brain', 'dependencies': OrderedDict({'booster_interface': '/home/baro/Downloads/Football/K1_Football_Demo/install/booster_interface', 'booster_msgs': '/home/baro/Downloads/Football/K1_Football_Demo/install/booster_msgs', 'game_controller_interface': '/home/baro/Downloads/Football/K1_Football_Demo/install/game_controller_interface', 'vision_interface': '/home/baro/Downloads/Football/K1_Football_Demo/install/vision_interface'})}
+[0.000436] (game_controller) JobQueued: {'identifier': 'game_controller', 'dependencies': OrderedDict({'game_controller_interface': '/home/baro/Downloads/Football/K1_Football_Demo/install/game_controller_interface'})}
+[0.000450] (vision) JobQueued: {'identifier': 'vision', 'dependencies': OrderedDict({'vision_interface': '/home/baro/Downloads/Football/K1_Football_Demo/install/vision_interface'})}
+[0.000462] (game_controller_interface) JobStarted: {'identifier': 'game_controller_interface'}
+[0.003125] (vision_interface) JobStarted: {'identifier': 'vision_interface'}
+[0.004070] (booster_interface) JobStarted: {'identifier': 'booster_interface'}
+[0.004634] (booster_msgs) JobStarted: {'identifier': 'booster_msgs'}
+[0.006092] (game_controller_interface) JobProgress: {'identifier': 'game_controller_interface', 'progress': 'cmake'}
+[0.006443] (game_controller_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/game_controller_interface', '-DCMAKE_INSTALL_PREFIX=/home/baro/Downloads/Football/K1_Football_Demo/install/game_controller_interface'], 'cwd': '/home/baro/Downloads/Football/K1_Football_Demo/build/game_controller_interface', 'env': OrderedDict({'SHELL': '/usr/bin/bash', 'COREPACK_ENABLE_AUTO_PIN': '0', 'COLORTERM': 'truecolor', 'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session1', 'XDG_MENU_PREFIX': 'plasma-', 'GTK_IM_MODULE': 'fcitx', 'XDG_BACKEND': 'wayland', 'AI_AGENT': 'claude-code_2-1-145_agent', 'CLAUDE_CODE_SESSION_ID': 'c98b5862-d27d-4e14-9d2e-17e6b8cfbe6f', 'ILLOGICAL_IMPULSE_VIRTUAL_ENV': '~/.local/state/quickshell/.venv', 'CLAUDE_EFFORT': 'high', 'XMODIFIERS': '@im=fcitx', 'DESKTOP_SESSION': 'hyprland', 'ELECTRON_OZONE_PLATFORM_HINT': 'auto', 'KITTY_PID': '2860', 'XDG_SEAT': 'seat0', 'PWD': '/home/baro/Downloads/Football/K1_Football_Demo/build/game_controller_interface', 'XDG_SESSION_DESKTOP': 'Hyprland', 'LOGNAME': 'baro', 'QT_QPA_PLATFORMTHEME': 'kde', 'XDG_SESSION_TYPE': 'wayland', 'KITTY_PUBLIC_KEY': '1:6zFY%J0=o=V7FSZj(tNc#OZILuVrXF`gM~=cnY3c', 'NoDefaultCurrentDirectoryInExePath': '1', 'CLAUDECODE': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/baro', 'LANG': 'en_US.UTF-8', '_JAVA_AWT_WM_NONREPARENTING': '1', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'STARSHIP_SHELL': 'fish', 'WAYLAND_DISPLAY': 'wayland-1', 'KITTY_WINDOW_ID': '3', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'STARSHIP_SESSION_KEY': '1297216087142799', 'QT_QPA_PLATFORM': 'wayland;xcb', 'XDG_SESSION_CLASS': 'user', 'COLCON': '1', 'TERM': 'xterm-kitty', 'TERMINFO': '/usr/lib/kitty/terminfo', 'USER': 'baro', 'HYPRLAND_INSTANCE_SIGNATURE': 'a47147bc095e5b3be3eb8bd04f0ac242b968cd4d_1779285367_2026370153', 'DISPLAY': ':1', 'SHLVL': '4', 'MOZ_ENABLE_WAYLAND': '1', 'GIT_EDITOR': 'true', 'QT_IM_MODULE': 'fcitx', 'XDG_VTNR': '1', 'XDG_SESSION_ID': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'DEBUGINFOD_URLS': 'https://debuginfod.archlinux.org', 'XDG_DATA_DIRS': '/home/baro/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'CLAUDE_CODE_EXECPATH': '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/baro/.claude/plugins/cache/caveman/caveman/655b7d9c5431/bin', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'PYTHONWARNINGS': 'ignore::DeprecationWarning,ignore::UserWarning,ignore::FutureWarning', 'MAIL': '/var/spool/mail/baro', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', 'OLDPWD': '/home/baro/Downloads/Football/K1_Football_Demo/scripts', '_': '/usr/bin/env'}), 'shell': False}
+[0.007502] (vision_interface) JobProgress: {'identifier': 'vision_interface', 'progress': 'cmake'}
+[0.007792] (vision_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface', '-DCMAKE_INSTALL_PREFIX=/home/baro/Downloads/Football/K1_Football_Demo/install/vision_interface'], 'cwd': '/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface', 'env': OrderedDict({'SHELL': '/usr/bin/bash', 'COREPACK_ENABLE_AUTO_PIN': '0', 'COLORTERM': 'truecolor', 'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session1', 'XDG_MENU_PREFIX': 'plasma-', 'GTK_IM_MODULE': 'fcitx', 'XDG_BACKEND': 'wayland', 'AI_AGENT': 'claude-code_2-1-145_agent', 'CLAUDE_CODE_SESSION_ID': 'c98b5862-d27d-4e14-9d2e-17e6b8cfbe6f', 'ILLOGICAL_IMPULSE_VIRTUAL_ENV': '~/.local/state/quickshell/.venv', 'CLAUDE_EFFORT': 'high', 'XMODIFIERS': '@im=fcitx', 'DESKTOP_SESSION': 'hyprland', 'ELECTRON_OZONE_PLATFORM_HINT': 'auto', 'KITTY_PID': '2860', 'XDG_SEAT': 'seat0', 'PWD': '/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface', 'XDG_SESSION_DESKTOP': 'Hyprland', 'LOGNAME': 'baro', 'QT_QPA_PLATFORMTHEME': 'kde', 'XDG_SESSION_TYPE': 'wayland', 'KITTY_PUBLIC_KEY': '1:6zFY%J0=o=V7FSZj(tNc#OZILuVrXF`gM~=cnY3c', 'NoDefaultCurrentDirectoryInExePath': '1', 'CLAUDECODE': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/baro', 'LANG': 'en_US.UTF-8', '_JAVA_AWT_WM_NONREPARENTING': '1', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'STARSHIP_SHELL': 'fish', 'WAYLAND_DISPLAY': 'wayland-1', 'KITTY_WINDOW_ID': '3', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'STARSHIP_SESSION_KEY': '1297216087142799', 'QT_QPA_PLATFORM': 'wayland;xcb', 'XDG_SESSION_CLASS': 'user', 'COLCON': '1', 'TERM': 'xterm-kitty', 'TERMINFO': '/usr/lib/kitty/terminfo', 'USER': 'baro', 'HYPRLAND_INSTANCE_SIGNATURE': 'a47147bc095e5b3be3eb8bd04f0ac242b968cd4d_1779285367_2026370153', 'DISPLAY': ':1', 'SHLVL': '4', 'MOZ_ENABLE_WAYLAND': '1', 'GIT_EDITOR': 'true', 'QT_IM_MODULE': 'fcitx', 'XDG_VTNR': '1', 'XDG_SESSION_ID': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'DEBUGINFOD_URLS': 'https://debuginfod.archlinux.org', 'XDG_DATA_DIRS': '/home/baro/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'CLAUDE_CODE_EXECPATH': '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/baro/.claude/plugins/cache/caveman/caveman/655b7d9c5431/bin', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'PYTHONWARNINGS': 'ignore::DeprecationWarning,ignore::UserWarning,ignore::FutureWarning', 'MAIL': '/var/spool/mail/baro', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', 'OLDPWD': '/home/baro/Downloads/Football/K1_Football_Demo/scripts', '_': '/usr/bin/env'}), 'shell': False}
+[0.008953] (booster_interface) JobProgress: {'identifier': 'booster_interface', 'progress': 'cmake'}
+[0.009270] (booster_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface', '-DCMAKE_INSTALL_PREFIX=/home/baro/Downloads/Football/K1_Football_Demo/install/booster_interface'], 'cwd': '/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface', 'env': OrderedDict({'SHELL': '/usr/bin/bash', 'COREPACK_ENABLE_AUTO_PIN': '0', 'COLORTERM': 'truecolor', 'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session1', 'XDG_MENU_PREFIX': 'plasma-', 'GTK_IM_MODULE': 'fcitx', 'XDG_BACKEND': 'wayland', 'AI_AGENT': 'claude-code_2-1-145_agent', 'CLAUDE_CODE_SESSION_ID': 'c98b5862-d27d-4e14-9d2e-17e6b8cfbe6f', 'ILLOGICAL_IMPULSE_VIRTUAL_ENV': '~/.local/state/quickshell/.venv', 'CLAUDE_EFFORT': 'high', 'XMODIFIERS': '@im=fcitx', 'DESKTOP_SESSION': 'hyprland', 'ELECTRON_OZONE_PLATFORM_HINT': 'auto', 'KITTY_PID': '2860', 'XDG_SEAT': 'seat0', 'PWD': '/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface', 'XDG_SESSION_DESKTOP': 'Hyprland', 'LOGNAME': 'baro', 'QT_QPA_PLATFORMTHEME': 'kde', 'XDG_SESSION_TYPE': 'wayland', 'KITTY_PUBLIC_KEY': '1:6zFY%J0=o=V7FSZj(tNc#OZILuVrXF`gM~=cnY3c', 'NoDefaultCurrentDirectoryInExePath': '1', 'CLAUDECODE': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/baro', 'LANG': 'en_US.UTF-8', '_JAVA_AWT_WM_NONREPARENTING': '1', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'STARSHIP_SHELL': 'fish', 'WAYLAND_DISPLAY': 'wayland-1', 'KITTY_WINDOW_ID': '3', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'STARSHIP_SESSION_KEY': '1297216087142799', 'QT_QPA_PLATFORM': 'wayland;xcb', 'XDG_SESSION_CLASS': 'user', 'COLCON': '1', 'TERM': 'xterm-kitty', 'TERMINFO': '/usr/lib/kitty/terminfo', 'USER': 'baro', 'HYPRLAND_INSTANCE_SIGNATURE': 'a47147bc095e5b3be3eb8bd04f0ac242b968cd4d_1779285367_2026370153', 'DISPLAY': ':1', 'SHLVL': '4', 'MOZ_ENABLE_WAYLAND': '1', 'GIT_EDITOR': 'true', 'QT_IM_MODULE': 'fcitx', 'XDG_VTNR': '1', 'XDG_SESSION_ID': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'DEBUGINFOD_URLS': 'https://debuginfod.archlinux.org', 'XDG_DATA_DIRS': '/home/baro/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'CLAUDE_CODE_EXECPATH': '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/baro/.claude/plugins/cache/caveman/caveman/655b7d9c5431/bin', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'PYTHONWARNINGS': 'ignore::DeprecationWarning,ignore::UserWarning,ignore::FutureWarning', 'MAIL': '/var/spool/mail/baro', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', 'OLDPWD': '/home/baro/Downloads/Football/K1_Football_Demo/scripts', '_': '/usr/bin/env'}), 'shell': False}
+[0.010212] (booster_msgs) JobProgress: {'identifier': 'booster_msgs', 'progress': 'cmake'}
+[0.010691] (booster_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/baro/Downloads/Football/K1_Football_Demo/src/booster_msgs', '-DCMAKE_INSTALL_PREFIX=/home/baro/Downloads/Football/K1_Football_Demo/install/booster_msgs'], 'cwd': '/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs', 'env': OrderedDict({'SHELL': '/usr/bin/bash', 'COREPACK_ENABLE_AUTO_PIN': '0', 'COLORTERM': 'truecolor', 'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session1', 'XDG_MENU_PREFIX': 'plasma-', 'GTK_IM_MODULE': 'fcitx', 'XDG_BACKEND': 'wayland', 'AI_AGENT': 'claude-code_2-1-145_agent', 'CLAUDE_CODE_SESSION_ID': 'c98b5862-d27d-4e14-9d2e-17e6b8cfbe6f', 'ILLOGICAL_IMPULSE_VIRTUAL_ENV': '~/.local/state/quickshell/.venv', 'CLAUDE_EFFORT': 'high', 'XMODIFIERS': '@im=fcitx', 'DESKTOP_SESSION': 'hyprland', 'ELECTRON_OZONE_PLATFORM_HINT': 'auto', 'KITTY_PID': '2860', 'XDG_SEAT': 'seat0', 'PWD': '/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs', 'XDG_SESSION_DESKTOP': 'Hyprland', 'LOGNAME': 'baro', 'QT_QPA_PLATFORMTHEME': 'kde', 'XDG_SESSION_TYPE': 'wayland', 'KITTY_PUBLIC_KEY': '1:6zFY%J0=o=V7FSZj(tNc#OZILuVrXF`gM~=cnY3c', 'NoDefaultCurrentDirectoryInExePath': '1', 'CLAUDECODE': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/baro', 'LANG': 'en_US.UTF-8', '_JAVA_AWT_WM_NONREPARENTING': '1', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'STARSHIP_SHELL': 'fish', 'WAYLAND_DISPLAY': 'wayland-1', 'KITTY_WINDOW_ID': '3', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'STARSHIP_SESSION_KEY': '1297216087142799', 'QT_QPA_PLATFORM': 'wayland;xcb', 'XDG_SESSION_CLASS': 'user', 'COLCON': '1', 'TERM': 'xterm-kitty', 'TERMINFO': '/usr/lib/kitty/terminfo', 'USER': 'baro', 'HYPRLAND_INSTANCE_SIGNATURE': 'a47147bc095e5b3be3eb8bd04f0ac242b968cd4d_1779285367_2026370153', 'DISPLAY': ':1', 'SHLVL': '4', 'MOZ_ENABLE_WAYLAND': '1', 'GIT_EDITOR': 'true', 'QT_IM_MODULE': 'fcitx', 'XDG_VTNR': '1', 'XDG_SESSION_ID': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'DEBUGINFOD_URLS': 'https://debuginfod.archlinux.org', 'XDG_DATA_DIRS': '/home/baro/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'CLAUDE_CODE_EXECPATH': '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/baro/.claude/plugins/cache/caveman/caveman/655b7d9c5431/bin', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'PYTHONWARNINGS': 'ignore::DeprecationWarning,ignore::UserWarning,ignore::FutureWarning', 'MAIL': '/var/spool/mail/baro', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', 'OLDPWD': '/home/baro/Downloads/Football/K1_Football_Demo/scripts', '_': '/usr/bin/env'}), 'shell': False}
+[0.015904] (game_controller_interface) StderrLine: {'line': b'CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.016134] (game_controller_interface) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.016247] (game_controller_interface) StderrLine: {'line': b'  CMake.\n'}
+[0.016339] (game_controller_interface) StderrLine: {'line': b'\n'}
+[0.016428] (game_controller_interface) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[0.016515] (game_controller_interface) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[0.016601] (game_controller_interface) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[0.016689] (game_controller_interface) StderrLine: {'line': b'\n'}
+[0.016773] (game_controller_interface) StderrLine: {'line': b'\n'}
+[0.017030] (vision_interface) StderrLine: {'line': b'CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.017157] (vision_interface) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.017278] (vision_interface) StderrLine: {'line': b'  CMake.\n'}
+[0.017380] (vision_interface) StderrLine: {'line': b'\n'}
+[0.017480] (vision_interface) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[0.017582] (vision_interface) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[0.017685] (vision_interface) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[0.017788] (vision_interface) StderrLine: {'line': b'\n'}
+[0.017890] (vision_interface) StderrLine: {'line': b'\n'}
+[0.017994] (booster_interface) StderrLine: {'line': b'CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.018112] (booster_interface) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.018216] (booster_interface) StderrLine: {'line': b'  CMake.\n'}
+[0.018320] (booster_interface) StderrLine: {'line': b'\n'}
+[0.018405] (booster_interface) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[0.018489] (booster_interface) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[0.018572] (booster_interface) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[0.018656] (booster_interface) StderrLine: {'line': b'\n'}
+[0.018740] (booster_interface) StderrLine: {'line': b'\n'}
+[0.019355] (booster_msgs) StderrLine: {'line': b'CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.019523] (booster_msgs) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.019634] (booster_msgs) StderrLine: {'line': b'  CMake.\n'}
+[0.019731] (booster_msgs) StderrLine: {'line': b'\n'}
+[0.019823] (booster_msgs) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[0.019918] (booster_msgs) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[0.020015] (booster_msgs) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[0.020108] (booster_msgs) StderrLine: {'line': b'\n'}
+[0.020201] (booster_msgs) StderrLine: {'line': b'\n'}
+[0.030234] (game_controller_interface) StderrLine: {'line': b'CMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.030397] (game_controller_interface) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.030478] (game_controller_interface) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.030541] (game_controller_interface) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.030901] (game_controller_interface) StderrLine: {'line': b'\n'}
+[0.031031] (game_controller_interface) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.031134] (game_controller_interface) StderrLine: {'line': b'  any of the following names:\n'}
+[0.031234] (game_controller_interface) StderrLine: {'line': b'\n'}
+[0.031349] (game_controller_interface) StderrLine: {'line': b'    ament_cmake.cps\n'}
+[0.031464] (game_controller_interface) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.031574] (game_controller_interface) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.031751] (game_controller_interface) StderrLine: {'line': b'\n'}
+[0.032129] (game_controller_interface) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.032678] (game_controller_interface) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.033044] (game_controller_interface) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.033268] (game_controller_interface) StderrLine: {'line': b'  has been installed.\n'}
+[0.033497] (game_controller_interface) StderrLine: {'line': b'\n'}
+[0.033827] (game_controller_interface) StderrLine: {'line': b'\n'}
+[0.034092] (game_controller_interface) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.034464] (vision_interface) StderrLine: {'line': b'CMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.034547] (vision_interface) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.034611] (vision_interface) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.034728] (vision_interface) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.034842] (vision_interface) StderrLine: {'line': b'\n'}
+[0.034951] (vision_interface) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.035072] (vision_interface) StderrLine: {'line': b'  any of the following names:\n'}
+[0.035179] (vision_interface) StderrLine: {'line': b'\n'}
+[0.035304] (vision_interface) StderrLine: {'line': b'    ament_cmake.cps\n'}
+[0.035417] (vision_interface) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.035527] (vision_interface) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.035640] (vision_interface) StderrLine: {'line': b'\n'}
+[0.035753] (vision_interface) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.035877] (vision_interface) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.035998] (vision_interface) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.036131] (vision_interface) StderrLine: {'line': b'  has been installed.\n'}
+[0.036271] (vision_interface) StderrLine: {'line': b'\n'}
+[0.036389] (vision_interface) StderrLine: {'line': b'\n'}
+[0.036506] (vision_interface) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.036638] (game_controller_interface) CommandEnded: {'returncode': 1}
+[0.037097] (booster_interface) StderrLine: {'line': b'CMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.037218] (booster_interface) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.037318] (booster_interface) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.037410] (booster_interface) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.037503] (booster_interface) StderrLine: {'line': b'\n'}
+[0.037593] (booster_interface) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.037684] (booster_interface) StderrLine: {'line': b'  any of the following names:\n'}
+[0.037777] (booster_interface) StderrLine: {'line': b'\n'}
+[0.037875] (booster_interface) StderrLine: {'line': b'    ament_cmake.cps\n'}
+[0.037968] (booster_interface) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.038064] (booster_interface) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.038176] (booster_interface) StderrLine: {'line': b'\n'}
+[0.038974] (booster_interface) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.041490] (booster_interface) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.042107] (booster_interface) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.042271] (booster_interface) StderrLine: {'line': b'  has been installed.\n'}
+[0.042387] (booster_interface) StderrLine: {'line': b'\n'}
+[0.042500] (booster_interface) StderrLine: {'line': b'\n'}
+[0.042614] (booster_interface) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.042758] (booster_msgs) StderrLine: {'line': b'CMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.042892] (booster_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.043010] (booster_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.043124] (booster_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.043238] (booster_msgs) StderrLine: {'line': b'\n'}
+[0.043359] (booster_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.043472] (booster_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.043587] (booster_msgs) StderrLine: {'line': b'\n'}
+[0.043700] (booster_msgs) StderrLine: {'line': b'    ament_cmake.cps\n'}
+[0.043812] (booster_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.043924] (booster_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.044031] (booster_msgs) StderrLine: {'line': b'\n'}
+[0.044128] (booster_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.044223] (booster_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.044326] (booster_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.044422] (booster_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.044517] (booster_msgs) StderrLine: {'line': b'\n'}
+[0.044613] (booster_msgs) StderrLine: {'line': b'\n'}
+[0.044705] (booster_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.044816] (vision_interface) CommandEnded: {'returncode': 1}
+[0.045231] (booster_interface) CommandEnded: {'returncode': 1}
+[0.045692] (booster_msgs) CommandEnded: {'returncode': 1}
+[0.056863] (game_controller_interface) JobEnded: {'identifier': 'game_controller_interface', 'rc': 1}
+[0.057518] (vision_interface) JobEnded: {'identifier': 'vision_interface', 'rc': 'SIGINT'}
+[0.057689] (booster_msgs) JobEnded: {'identifier': 'booster_msgs', 'rc': 'SIGINT'}
+[0.057820] (booster_interface) JobEnded: {'identifier': 'booster_interface', 'rc': 'SIGINT'}
+[0.067873] (brain) JobSkipped: {'identifier': 'brain'}
+[0.067915] (game_controller) JobSkipped: {'identifier': 'game_controller'}
+[0.067927] (vision) JobSkipped: {'identifier': 'vision'}
+[0.067936] (-) EventReactorShutdown: {}

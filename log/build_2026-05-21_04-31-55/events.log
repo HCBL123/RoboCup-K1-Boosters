@@ -1,0 +1,72 @@
+[0.000000] (-) TimerEvent: {}
+[0.000078] (-) JobUnselected: {'identifier': 'booster_interface'}
+[0.000115] (-) JobUnselected: {'identifier': 'booster_msgs'}
+[0.000145] (-) JobUnselected: {'identifier': 'game_controller'}
+[0.000156] (-) JobUnselected: {'identifier': 'game_controller_interface'}
+[0.000166] (-) JobUnselected: {'identifier': 'vision'}
+[0.000174] (-) JobUnselected: {'identifier': 'vision_interface'}
+[0.000187] (brain) JobQueued: {'identifier': 'brain', 'dependencies': OrderedDict({'booster_interface': '/home/baro/Downloads/Football/K1_Football_Demo/install/booster_interface', 'booster_msgs': '/home/baro/Downloads/Football/K1_Football_Demo/install/booster_msgs', 'game_controller_interface': '/home/baro/Downloads/Football/K1_Football_Demo/install/game_controller_interface', 'vision_interface': '/home/baro/Downloads/Football/K1_Football_Demo/install/vision_interface'})}
+[0.000608] (brain) JobStarted: {'identifier': 'brain'}
+[0.009018] (brain) JobProgress: {'identifier': 'brain', 'progress': 'cmake'}
+[0.009289] (brain) Command: {'cmd': ['/usr/bin/cmake', '/home/baro/Downloads/Football/K1_Football_Demo/src/brain', '-DCMAKE_INSTALL_PREFIX=/home/baro/Downloads/Football/K1_Football_Demo/install/brain'], 'cwd': '/home/baro/Downloads/Football/K1_Football_Demo/build/brain', 'env': OrderedDict({'SHELL': '/usr/bin/bash', 'ROS_VERSION': '2', 'COREPACK_ENABLE_AUTO_PIN': '0', 'COLORTERM': 'truecolor', 'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session1', 'XDG_MENU_PREFIX': 'plasma-', 'GTK_IM_MODULE': 'fcitx', 'XDG_BACKEND': 'wayland', 'PKG_CONFIG_PATH': '/opt/ros/humble/lib/pkgconfig', 'AI_AGENT': 'claude-code_2-1-145_agent', 'ROS_PYTHON_VERSION': '3', 'CLAUDE_CODE_SESSION_ID': 'd9955c21-4ce6-4142-a1a6-091d75ef223f', 'ILLOGICAL_IMPULSE_VIRTUAL_ENV': '~/.local/state/quickshell/.venv', 'CLAUDE_EFFORT': 'high', 'XMODIFIERS': '@im=fcitx', 'DESKTOP_SESSION': 'hyprland', 'ELECTRON_OZONE_PLATFORM_HINT': 'auto', 'KITTY_PID': '2860', 'XDG_SEAT': 'seat0', 'PWD': '/home/baro/Downloads/Football/K1_Football_Demo/build/brain', 'LOGNAME': 'baro', 'XDG_SESSION_DESKTOP': 'Hyprland', 'QT_QPA_PLATFORMTHEME': 'kde', 'XDG_SESSION_TYPE': 'wayland', 'KITTY_PUBLIC_KEY': '1:6zFY%J0=o=V7FSZj(tNc#OZILuVrXF`gM~=cnY3c', 'NoDefaultCurrentDirectoryInExePath': '1', 'CLAUDE_BRIDGE_REATTACH_SESSION': 'cse_0131UH6hhS96Ur1YjihtHyBD', 'CLAUDECODE': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/baro', 'LANG': 'en_US.UTF-8', '_JAVA_AWT_WM_NONREPARENTING': '1', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'STARSHIP_SHELL': 'fish', 'WAYLAND_DISPLAY': 'wayland-1', 'FORCE_COLOR': '3', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CMAKE_PREFIX_PATH': '/opt/ros/humble/opt/pybind11_vendor:/opt/ros/humble', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'COLCON_PREFIX_PATH': '/home/baro/Downloads/Football/K1_Football_Demo/install:/opt/ros/humble', 'INVOCATION_ID': '', 'CLAUDE_ENABLE_STREAM_WATCHDOG': '1', 'STARSHIP_SESSION_KEY': '1297216087142799', 'QT_QPA_PLATFORM': 'wayland;xcb', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/build/ros2-humble/src/install/lib/python3.14/dist-packages:/opt/ros/humble/lib/python3.14/site-packages', 'COLCON': '1', 'TERMINFO': '/usr/lib/kitty/terminfo', 'TERM': 'xterm-256color', 'USER': 'baro', 'HYPRLAND_INSTANCE_SIGNATURE': 'a47147bc095e5b3be3eb8bd04f0ac242b968cd4d_1779285367_2026370153', 'DISPLAY': ':1', 'SHLVL': '3', 'MOZ_ENABLE_WAYLAND': '1', 'GIT_EDITOR': 'true', 'QT_IM_MODULE': 'fcitx', 'XDG_VTNR': '1', 'XDG_SESSION_ID': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/yaml_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'CLAUDE_JOB_DIR': '/home/baro/.claude/jobs/1c35334c', 'DEBUGINFOD_URLS': 'https://debuginfod.archlinux.org', 'XDG_DATA_DIRS': '/home/baro/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'CLAUDE_CODE_EXECPATH': '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe', 'BROWSER': 'true', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/baro/.claude/plugins/cache/caveman/caveman/655b7d9c5431/bin:/home/baro/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0/bin', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'MAIL': '/var/spool/mail/baro', 'ROS_DISTRO': 'humble', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', '_': '/usr/bin/env'}), 'shell': False}
+[0.058443] (brain) StdoutLine: {'line': b'-- The C compiler identification is GNU 16.1.1\n'}
+[0.099935] (-) TimerEvent: {}
+[0.151130] (brain) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 16.1.1\n'}
+[0.156462] (brain) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200098] (-) TimerEvent: {}
+[0.241338] (brain) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.263103] (brain) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.263357] (brain) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.263800] (brain) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.281702] (brain) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300189] (-) TimerEvent: {}
+[0.400361] (-) TimerEvent: {}
+[0.414668] (brain) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.429309] (brain) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.429543] (brain) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.430201] (brain) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.441057] (brain) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500560] (-) TimerEvent: {}
+[0.549040] (brain) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.14.5") found components: Interpreter\n'}
+[0.600670] (-) TimerEvent: {}
+[0.632548] (brain) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.676900] (brain) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.681284] (brain) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.689660] (brain) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.700854] (-) TimerEvent: {}
+[0.702263] (brain) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.715063] (brain) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.745019] (brain) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.746295] (brain) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.798275] (brain) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/libcrypto.so (found version "3.6.2")\n'}
+[0.800938] (-) TimerEvent: {}
+[0.812498] (brain) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include\n'}
+[0.829015] (brain) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.836128] (brain) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.901072] (-) TimerEvent: {}
+[0.920611] (brain) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.921706] (brain) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[0.985458] (brain) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.001195] (-) TimerEvent: {}
+[1.043377] (brain) StderrLine: {'line': b'CMake Error at CMakeLists.txt:13 (find_package):\n'}
+[1.043661] (brain) StderrLine: {'line': b'  By not providing "Findbehaviortree_cpp.cmake" in CMAKE_MODULE_PATH this\n'}
+[1.043753] (brain) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[1.043831] (brain) StderrLine: {'line': b'  "behaviortree_cpp", but CMake did not find one.\n'}
+[1.043908] (brain) StderrLine: {'line': b'\n'}
+[1.043993] (brain) StderrLine: {'line': b'  Could not find a package configuration file provided by "behaviortree_cpp"\n'}
+[1.044092] (brain) StderrLine: {'line': b'  with any of the following names:\n'}
+[1.044161] (brain) StderrLine: {'line': b'\n'}
+[1.044229] (brain) StderrLine: {'line': b'    behaviortree_cpp.cps\n'}
+[1.044296] (brain) StderrLine: {'line': b'    behaviortree_cppConfig.cmake\n'}
+[1.044364] (brain) StderrLine: {'line': b'    behaviortree_cpp-config.cmake\n'}
+[1.044430] (brain) StderrLine: {'line': b'\n'}
+[1.044495] (brain) StderrLine: {'line': b'  Add the installation prefix of "behaviortree_cpp" to CMAKE_PREFIX_PATH or\n'}
+[1.044561] (brain) StderrLine: {'line': b'  set "behaviortree_cpp_DIR" to a directory containing one of the above\n'}
+[1.044628] (brain) StderrLine: {'line': b'  files.  If "behaviortree_cpp" provides a separate development package or\n'}
+[1.044692] (brain) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[1.044756] (brain) StderrLine: {'line': b'\n'}
+[1.044820] (brain) StderrLine: {'line': b'\n'}
+[1.044893] (brain) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.053040] (brain) CommandEnded: {'returncode': 1}
+[1.074416] (brain) JobEnded: {'identifier': 'brain', 'rc': 1}
+[1.084814] (-) EventReactorShutdown: {}

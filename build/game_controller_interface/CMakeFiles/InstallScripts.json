@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/baro/Downloads/Football/K1_Football_Demo/build/game_controller_interface/cmake_install.cmake",
+		"/home/baro/Downloads/Football/K1_Football_Demo/build/game_controller_interface/game_controller_interface__py/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

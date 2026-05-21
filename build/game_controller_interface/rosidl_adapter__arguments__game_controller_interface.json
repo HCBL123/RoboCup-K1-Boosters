@@ -1,0 +1,8 @@
+{
+  "package_name": "game_controller_interface",
+  "non_idl_tuples": [
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/game_controller_interface:msg/GameControlData.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/game_controller_interface:msg/RobotInfo.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/game_controller_interface:msg/TeamInfo.msg"
+  ]
+}

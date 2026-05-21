@@ -1,0 +1,257 @@
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.14.5") found components: Interpreter
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+CMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:11 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.14.5", minimum required is "3.6")
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+CMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:11 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:11 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonLibs: /usr/lib/libpython3.14.so (found suitable version "3.14.5", minimum required is "3.5")
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.14
+-- Using PYTHON_LIBRARIES: /usr/lib/libpython3.14.so
+-- Found PythonExtra: .so
+-- Using numpy include directory: /usr/lib/python3.14/site-packages/numpy/_core/include
+-- Configuring done (3.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs
+[  2%] Generating C code for ROS interfaces
+[  4%] Generating C++ code for ROS interfaces
+[  4%] Built target ament_cmake_python_copy_booster_msgs
+running egg_info
+creating booster_msgs.egg-info
+writing booster_msgs.egg-info/PKG-INFO
+writing dependency_links to booster_msgs.egg-info/dependency_links.txt
+writing top-level names to booster_msgs.egg-info/top_level.txt
+writing manifest file 'booster_msgs.egg-info/SOURCES.txt'
+reading manifest file 'booster_msgs.egg-info/SOURCES.txt'
+writing manifest file 'booster_msgs.egg-info/SOURCES.txt'
+[  4%] Built target booster_msgs__cpp
+[  6%] Generating C++ introspection for ROS interfaces
+[  6%] Built target ament_cmake_python_build_booster_msgs_egg
+[  8%] Generating C++ type support for eProsima Fast-RTPS
+[ 10%] Generating C++ type support dispatch for ROS interfaces
+[ 12%] Building C object CMakeFiles/booster_msgs__rosidl_generator_c.dir/rosidl_generator_c/booster_msgs/msg/detail/binary_data__functions.c.o
+[ 14%] Building C object CMakeFiles/booster_msgs__rosidl_generator_c.dir/rosidl_generator_c/booster_msgs/msg/detail/rpc_resp_msg__functions.c.o
+[ 17%] Building C object CMakeFiles/booster_msgs__rosidl_generator_c.dir/rosidl_generator_c/booster_msgs/msg/detail/rpc_req_msg__functions.c.o
+[ 19%] Linking C shared library libbooster_msgs__rosidl_generator_c.so
+[ 19%] Built target booster_msgs__rosidl_generator_c
+[ 21%] Building CXX object CMakeFiles/booster_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_msgs/msg/rpc_resp_msg__type_support.cpp.o
+[ 23%] Building CXX object CMakeFiles/booster_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_msgs/msg/rpc_req_msg__type_support.cpp.o
+[ 25%] Building CXX object CMakeFiles/booster_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_msgs/msg/binary_data__type_support.cpp.o
+[ 27%] Building CXX object CMakeFiles/booster_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_msgs/msg/detail/binary_data__type_support.cpp.o
+[ 29%] Building CXX object CMakeFiles/booster_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp.o
+In file included from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_cpp/booster_msgs/msg/binary_data__type_support.cpp:7:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:17: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+      |                 ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:16:1: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+   15 | #include "rosidl_runtime_cpp/message_initialization.hpp"
+  +++ |+#include <cstdint>
+   16 | 
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:100: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+      |                                                                                                    ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:100: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:107: error: template argument 1 is invalid [-Wtemplate-body]
+   49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+      |                                                                                                           ^~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:50:3: error: ‘_data_type’ does not name a type [-Wtemplate-body]
+   50 |   _data_type data;
+      |   ^~~~~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:23: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+      |                       ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:23: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:106: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+      |                                                                                                          ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:106: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:113: error: template argument 1 is invalid [-Wtemplate-body]
+   54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+      |                                                                                                                 ^~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp: In member function ‘booster_msgs::msg::BinaryData_<ContainerAllocator>::Type& booster_msgs::msg::BinaryData_<ContainerAllocator>::set__data(const int&)’:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:56:11: error: ‘struct booster_msgs::msg::BinaryData_<ContainerAllocator>’ has no member named ‘data’ [-Wtemplate-body]
+   56 |     this->data = _arg;
+      |           ^~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp: In member function ‘bool booster_msgs::msg::BinaryData_<ContainerAllocator>::operator==(const booster_msgs::msg::BinaryData_<ContainerAllocator>&) const’:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:102:15: error: ‘const struct booster_msgs::msg::BinaryData_<ContainerAllocator>’ has no member named ‘data’ [-Wtemplate-body]
+  102 |     if (this->data != other.data) {
+      |               ^~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:102:29: error: ‘const struct booster_msgs::msg::BinaryData_<ContainerAllocator>’ has no member named ‘data’ [-Wtemplate-body]
+  102 |     if (this->data != other.data) {
+      |                             ^~~~
+make[2]: *** [CMakeFiles/booster_msgs__rosidl_typesupport_cpp.dir/build.make:97: CMakeFiles/booster_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_msgs/msg/binary_data__type_support.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_introspection_cpp/booster_msgs/msg/detail/binary_data__type_support.cpp:12:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:17: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+      |                 ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:16:1: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+   15 | #include "rosidl_runtime_cpp/message_initialization.hpp"
+  +++ |+#include <cstdint>
+   16 | 
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:100: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+      |                                                                                                    ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:100: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:107: error: template argument 1 is invalid [-Wtemplate-body]
+   49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+      |                                                                                                           ^~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:50:3: error: ‘_data_type’ does not name a type [-Wtemplate-body]
+   50 |   _data_type data;
+      |   ^~~~~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:23: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+      |                       ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:23: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:106: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+      |                                                                                                          ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:106: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:113: error: template argument 1 is invalid [-Wtemplate-body]
+   54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+      |                                                                                                                 ^~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp: In member function ‘booster_msgs::msg::BinaryData_<ContainerAllocator>::Type& booster_msgs::msg::BinaryData_<ContainerAllocator>::set__data(const int&)’:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:56:11: error: ‘struct booster_msgs::msg::BinaryData_<ContainerAllocator>’ has no member named ‘data’ [-Wtemplate-body]
+   56 |     this->data = _arg;
+      |           ^~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp: In member function ‘bool booster_msgs::msg::BinaryData_<ContainerAllocator>::operator==(const booster_msgs::msg::BinaryData_<ContainerAllocator>&) const’:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:102:15: error: ‘const struct booster_msgs::msg::BinaryData_<ContainerAllocator>’ has no member named ‘data’ [-Wtemplate-body]
+  102 |     if (this->data != other.data) {
+      |               ^~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:102:29: error: ‘const struct booster_msgs::msg::BinaryData_<ContainerAllocator>’ has no member named ‘data’ [-Wtemplate-body]
+  102 |     if (this->data != other.data) {
+      |                             ^~~~
+make[1]: *** [CMakeFiles/Makefile2:482: CMakeFiles/booster_msgs__rosidl_typesupport_cpp.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from /usr/include/time.h:29,
+                 from /usr/include/pthread.h:23,
+                 from /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:35,
+                 from /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr.h:157,
+                 from /usr/include/c++/16.1.1/ext/atomicity.h:37,
+                 from /usr/include/c++/16.1.1/bits/shared_ptr_base.h:61,
+                 from /usr/include/c++/16.1.1/bits/shared_ptr.h:53,
+                 from /usr/include/c++/16.1.1/memory:82,
+                 from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:10:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_introspection_cpp/booster_msgs/msg/detail/binary_data__type_support.cpp: At global scope:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_introspection_cpp/booster_msgs/msg/detail/binary_data__type_support.cpp:94:45: error: ‘using booster_msgs::msg::BinaryData = struct booster_msgs::msg::BinaryData_<std::allocator<void> >’ {aka ‘struct booster_msgs::msg::BinaryData_<std::allocator<void> >’} has no member named ‘data’
+   94 |     offsetof(booster_msgs::msg::BinaryData, data),  // bytes offset in struct
+      |                                             ^~~~
+make[2]: *** [CMakeFiles/booster_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:108: CMakeFiles/booster_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_msgs/msg/detail/binary_data__type_support.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:450: CMakeFiles/booster_msgs__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+In file included from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/binary_data__rosidl_typesupport_fastrtps_cpp.hpp:11,
+                 from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp:4:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:17: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+      |                 ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:16:1: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+   15 | #include "rosidl_runtime_cpp/message_initialization.hpp"
+  +++ |+#include <cstdint>
+   16 | 
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:100: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+      |                                                                                                    ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:100: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:49:107: error: template argument 1 is invalid [-Wtemplate-body]
+   49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+      |                                                                                                           ^~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:50:3: error: ‘_data_type’ does not name a type [-Wtemplate-body]
+   50 |   _data_type data;
+      |   ^~~~~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:23: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+      |                       ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:23: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:106: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+   54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+      |                                                                                                          ^~~~~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:106: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:54:113: error: template argument 1 is invalid [-Wtemplate-body]
+   54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+      |                                                                                                                 ^~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp: In member function ‘booster_msgs::msg::BinaryData_<ContainerAllocator>::Type& booster_msgs::msg::BinaryData_<ContainerAllocator>::set__data(const int&)’:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:56:11: error: ‘struct booster_msgs::msg::BinaryData_<ContainerAllocator>’ has no member named ‘data’ [-Wtemplate-body]
+   56 |     this->data = _arg;
+      |           ^~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp: In member function ‘bool booster_msgs::msg::BinaryData_<ContainerAllocator>::operator==(const booster_msgs::msg::BinaryData_<ContainerAllocator>&) const’:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:102:15: error: ‘const struct booster_msgs::msg::BinaryData_<ContainerAllocator>’ has no member named ‘data’ [-Wtemplate-body]
+  102 |     if (this->data != other.data) {
+      |               ^~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/detail/binary_data__struct.hpp:102:29: error: ‘const struct booster_msgs::msg::BinaryData_<ContainerAllocator>’ has no member named ‘data’ [-Wtemplate-body]
+  102 |     if (this->data != other.data) {
+      |                             ^~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp: In function ‘bool booster_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(const booster_msgs::msg::BinaryData&, eprosima::fastcdr::Cdr&)’:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp:37:24: error: ‘const booster_msgs::msg::BinaryData’ {aka ‘const struct booster_msgs::msg::BinaryData_<std::allocator<void> >’} has no member named ‘data’
+   37 |     cdr << ros_message.data;
+      |                        ^~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp: In function ‘bool booster_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(eprosima::fastcdr::Cdr&, booster_msgs::msg::BinaryData&)’:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp:50:24: error: ‘using booster_msgs::msg::BinaryData = struct booster_msgs::msg::BinaryData_<std::allocator<void> >’ {aka ‘struct booster_msgs::msg::BinaryData_<std::allocator<void> >’} has no member named ‘data’
+   50 |     cdr >> ros_message.data;
+      |                        ^~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp: In function ‘size_t booster_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(const booster_msgs::msg::BinaryData&, size_t)’:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp:71:37: error: ‘const booster_msgs::msg::BinaryData’ {aka ‘const struct booster_msgs::msg::BinaryData_<std::allocator<void> >’} has no member named ‘data’
+   71 |     size_t array_size = ros_message.data.size();
+      |                                     ^~~~
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp:75:43: error: ‘const booster_msgs::msg::BinaryData’ {aka ‘const struct booster_msgs::msg::BinaryData_<std::allocator<void> >’} has no member named ‘data’
+   75 |     size_t item_size = sizeof(ros_message.data[0]);
+      |                                           ^~~~
+In file included from /usr/include/strings.h:23,
+                 from /usr/include/string.h:494,
+                 from /opt/ros/humble/include/fastcdr/FastBuffer.h:21,
+                 from /opt/ros/humble/include/fastcdr/Cdr.h:19,
+                 from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/binary_data__rosidl_typesupport_fastrtps_cpp.hpp:25:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp: In function ‘size_t booster_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_BinaryData(bool&, bool&, size_t)’:
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp:123:26: error: ‘using DataType = using booster_msgs::msg::BinaryData = struct booster_msgs::msg::BinaryData_<std::allocator<void> >’ {aka ‘struct booster_msgs::msg::BinaryData_<std::allocator<void> >’} has no member named ‘data’
+  123 |       offsetof(DataType, data) +
+      |                          ^~~~
+make[2]: *** [CMakeFiles/booster_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:108: CMakeFiles/booster_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:418: CMakeFiles/booster_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

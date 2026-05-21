@@ -1,0 +1,39 @@
+{
+  "package_name": "booster_interface",
+  "output_dir": "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_c/booster_interface",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource",
+  "idl_tuples": [
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/BoosterApiReqMsg.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/BoosterApiRespMsg.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/MotorState.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/MotorCmd.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/LowCmd.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/ImuState.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/LowState.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/RawBytesMsg.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/Odometer.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/RemoteControllerState.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:srv/RpcService.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c",
+    "/opt/ros/humble/lib/python3.14/site-packages/rosidl_typesupport_fastrtps_c/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__type_support_c.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface/msg/BoosterApiReqMsg.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface/msg/BoosterApiRespMsg.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface/msg/MotorState.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface/msg/MotorCmd.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface/msg/LowCmd.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface/msg/ImuState.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface/msg/LowState.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface/msg/RawBytesMsg.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface/msg/Odometer.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface/msg/RemoteControllerState.idl",
+    "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface/srv/RpcService.idl"
+  ]
+}

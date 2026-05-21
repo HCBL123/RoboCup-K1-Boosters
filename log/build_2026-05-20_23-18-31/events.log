@@ -1,0 +1,11 @@
+[0.000000] (-) TimerEvent: {}
+[0.000083] (-) JobUnselected: {'identifier': 'booster_interface'}
+[0.000176] (-) JobUnselected: {'identifier': 'booster_msgs'}
+[0.000235] (-) JobUnselected: {'identifier': 'game_controller'}
+[0.000362] (-) JobUnselected: {'identifier': 'game_controller_interface'}
+[0.000605] (-) JobUnselected: {'identifier': 'vision'}
+[0.000835] (-) JobUnselected: {'identifier': 'vision_interface'}
+[0.000896] (brain) JobQueued: {'identifier': 'brain', 'dependencies': OrderedDict({'booster_interface': '/home/baro/Downloads/Football/K1_Football_Demo/install/booster_interface', 'booster_msgs': '/home/baro/Downloads/Football/K1_Football_Demo/install/booster_msgs', 'game_controller_interface': '/home/baro/Downloads/Football/K1_Football_Demo/install/game_controller_interface', 'vision_interface': '/home/baro/Downloads/Football/K1_Football_Demo/install/vision_interface'})}
+[0.000964] (brain) JobStarted: {'identifier': 'brain'}
+[0.015835] (brain) JobEnded: {'identifier': 'brain', 'rc': 1}
+[0.026286] (-) EventReactorShutdown: {}

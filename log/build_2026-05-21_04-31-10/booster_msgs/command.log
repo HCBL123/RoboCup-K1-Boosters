@@ -1,0 +1,2 @@
+Invoking command in '/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs': DEBUGINFOD_URLS=https://debuginfod.archlinux.org _=/usr/bin/env /usr/bin/cmake --build /home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs -- -j8 -l8
+Invoked command in '/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs' returned '2': DEBUGINFOD_URLS=https://debuginfod.archlinux.org _=/usr/bin/env /usr/bin/cmake --build /home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs -- -j8 -l8

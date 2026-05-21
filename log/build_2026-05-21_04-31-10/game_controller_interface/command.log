@@ -1,0 +1,1 @@
+Invoking command in '/home/baro/Downloads/Football/K1_Football_Demo/build/game_controller_interface': DEBUGINFOD_URLS=https://debuginfod.archlinux.org _=/usr/bin/env /usr/bin/cmake --build /home/baro/Downloads/Football/K1_Football_Demo/build/game_controller_interface -- -j8 -l8

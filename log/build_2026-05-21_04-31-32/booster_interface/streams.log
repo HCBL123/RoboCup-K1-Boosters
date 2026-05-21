@@ -1,0 +1,539 @@
+[0.013s] Invoking command in '/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface': DEBUGINFOD_URLS=https://debuginfod.archlinux.org _=/usr/bin/env /usr/bin/cmake --build /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface -- -j8 -l8
+[0.056s] [  1%] Generating C code for ROS interfaces
+[0.069s] [  1%] Built target booster_interface__cpp
+[0.081s] [  1%] Built target ament_cmake_python_copy_booster_interface
+[0.086s] [  1%] Generating C++ type support for eProsima Fast-RTPS
+[0.141s] [  2%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/motor_state__type_support.cpp.o
+[0.145s] [  4%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/raw_bytes_msg__type_support.cpp.o
+[0.145s] [  4%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/odometer__type_support.cpp.o
+[0.146s] [  5%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/low_state__type_support.cpp.o
+[0.232s] [  6%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/motor_state__type_support.cpp.o
+[0.755s] running egg_info
+[0.806s] writing booster_interface.egg-info/PKG-INFO
+[0.807s] writing dependency_links to booster_interface.egg-info/dependency_links.txt
+[0.808s] writing top-level names to booster_interface.egg-info/top_level.txt
+[0.973s] reading manifest file 'booster_interface.egg-info/SOURCES.txt'
+[0.979s] writing manifest file 'booster_interface.egg-info/SOURCES.txt'
+[0.979s] In file included from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/raw_bytes_msg__type_support.cpp:12:
+[0.979s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:49:17: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+[0.979s]    49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+[0.980s]       |                 ^~~~~~~
+[0.980s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:16:1: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[0.980s]    15 | #include "rosidl_runtime_cpp/message_initialization.hpp"
+[0.980s]   +++ |+#include <cstdint>
+[0.981s]    16 | 
+[0.981s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:49:100: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+[0.981s]    49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+[0.981s]       |                                                                                                    ^~~~~~~
+[0.981s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:49:100: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[0.982s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:49:107: error: template argument 1 is invalid [-Wtemplate-body]
+[0.982s]    49 |     std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>>;
+[0.982s]       |                                                                                                           ^~
+[0.985s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:50:3: error: ‘_msg_type’ does not name a type [-Wtemplate-body]
+[0.986s]    50 |   _msg_type msg;
+[0.986s]       |   ^~~~~~~~~
+[0.986s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:54:23: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+[0.986s]    54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+[0.986s]       |                       ^~~~~~~
+[0.986s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:54:23: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[0.987s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:54:106: error: ‘uint8_t’ was not declared in this scope [-Wtemplate-body]
+[0.987s]    54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+[0.987s]       |                                                                                                          ^~~~~~~
+[0.987s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:54:106: note: ‘uint8_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[0.987s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:54:113: error: template argument 1 is invalid [-Wtemplate-body]
+[0.987s]    54 |     const std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> & _arg)
+[0.988s]       |                                                                                                                 ^~
+[0.988s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp: In member function ‘booster_interface::msg::RawBytesMsg_<ContainerAllocator>::Type& booster_interface::msg::RawBytesMsg_<ContainerAllocator>::set__msg(const int&)’:
+[0.988s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:56:11: error: ‘struct booster_interface::msg::RawBytesMsg_<ContainerAllocator>’ has no member named ‘msg’ [-Wtemplate-body]
+[0.990s]    56 |     this->msg = _arg;
+[0.990s]       |           ^~~
+[0.990s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp: In member function ‘bool booster_interface::msg::RawBytesMsg_<ContainerAllocator>::operator==(const booster_interface::msg::RawBytesMsg_<ContainerAllocator>&) const’:
+[0.990s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:102:15: error: ‘const struct booster_interface::msg::RawBytesMsg_<ContainerAllocator>’ has no member named ‘msg’ [-Wtemplate-body]
+[0.991s]   102 |     if (this->msg != other.msg) {
+[0.991s]       |               ^~~
+[0.991s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:102:28: error: ‘const struct booster_interface::msg::RawBytesMsg_<ContainerAllocator>’ has no member named ‘msg’ [-Wtemplate-body]
+[0.991s]   102 |     if (this->msg != other.msg) {
+[0.991s]       |                            ^~~
+[0.992s] In file included from /usr/include/time.h:29,
+[0.992s]                  from /usr/include/pthread.h:23,
+[0.992s]                  from /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:35,
+[0.992s]                  from /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr.h:157,
+[0.992s]                  from /usr/include/c++/16.1.1/ext/atomicity.h:37,
+[0.992s]                  from /usr/include/c++/16.1.1/bits/shared_ptr_base.h:61,
+[0.993s]                  from /usr/include/c++/16.1.1/bits/shared_ptr.h:53,
+[0.993s]                  from /usr/include/c++/16.1.1/memory:82,
+[0.993s]                  from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp:10:
+[0.998s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/raw_bytes_msg__type_support.cpp: At global scope:
+[0.998s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/raw_bytes_msg__type_support.cpp:94:51: error: ‘using booster_interface::msg::RawBytesMsg = struct booster_interface::msg::RawBytesMsg_<std::allocator<void> >’ {aka ‘struct booster_interface::msg::RawBytesMsg_<std::allocator<void> >’} has no member named ‘msg’
+[0.998s]    94 |     offsetof(booster_interface::msg::RawBytesMsg, msg),  // bytes offset in struct
+[0.998s]       |                                                   ^~~
+[0.998s] In file included from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/motor_state__type_support.cpp:12:
+[1.000s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:89:5: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[1.000s]    89 |     uint32_t;
+[1.000s]       |     ^~~~~~~~
+[1.000s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:16:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.000s]    15 | #include "rosidl_runtime_cpp/message_initialization.hpp"
+[1.001s]   +++ |+#include <cstdint>
+[1.001s]    16 | 
+[1.001s] In file included from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_cpp/booster_interface/msg/motor_state__type_support.cpp:7:
+[1.001s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:89:5: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[1.001s]    89 |     uint32_t;
+[1.001s]       |     ^~~~~~~~
+[1.002s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:16:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.002s]    15 | #include "rosidl_runtime_cpp/message_initialization.hpp"
+[1.005s]   +++ |+#include <cstdint>
+[1.005s]    16 | 
+[1.007s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:90:3: error: ‘_lost_type’ does not name a type; did you mean ‘_mode_type’? [-Wtemplate-body]
+[1.007s]    90 |   _lost_type lost;
+[1.007s]       |   ^~~~~~~~~~
+[1.007s]       |   _mode_type
+[1.011s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:16: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.011s]    92 |     std::array<uint32_t, 2>;
+[1.012s]       |                ^~~~~~~~
+[1.012s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:16: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.012s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:90:3: error: ‘_lost_type’ does not name a type; did you mean ‘_mode_type’? [-Wtemplate-body]
+[1.012s]    90 |   _lost_type lost;
+[1.012s]       |   ^~~~~~~~~~
+[1.013s]       |   _mode_type
+[1.013s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:27: error: template argument 1 is invalid [-Wtemplate-body]
+[1.013s]    92 |     std::array<uint32_t, 2>;
+[1.013s]       |                           ^
+[1.013s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:16: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.013s]    92 |     std::array<uint32_t, 2>;
+[1.014s]       |                ^~~~~~~~
+[1.014s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:16: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.014s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:27: error: template argument 1 is invalid [-Wtemplate-body]
+[1.014s]    92 |     std::array<uint32_t, 2>;
+[1.014s]       |                           ^
+[1.014s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:93:3: error: ‘_reserve_type’ does not name a type [-Wtemplate-body]
+[1.015s]    93 |   _reserve_type reserve;
+[1.015s]       |   ^~~~~~~~~~~~~
+[1.015s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:133:11: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[1.015s]   133 |     const uint32_t & _arg)
+[1.015s]       |           ^~~~~~~~
+[1.015s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:133:11: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.016s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:22: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.016s]   139 |     const std::array<uint32_t, 2> & _arg)
+[1.019s]       |                      ^~~~~~~~
+[1.020s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:22: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.021s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:33: error: template argument 1 is invalid [-Wtemplate-body]
+[1.021s]   139 |     const std::array<uint32_t, 2> & _arg)
+[1.021s]       |                                 ^
+[1.021s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In constructor ‘booster_interface::msg::MotorState_<ContainerAllocator>::MotorState_(rosidl_runtime_cpp::MessageInitialization)’:
+[1.021s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:47:13: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.022s]    47 |       this->lost = 0ul;
+[1.022s]       |             ^~~~
+[1.022s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:37: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.022s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.022s]       |                                     ^~~~~~~~
+[1.026s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:37: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.026s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:48: error: template argument 1 is invalid [-Wtemplate-body]
+[1.027s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.027s]       |                                                ^
+[1.027s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:49: error: ‘<declaration error>’ is not a template [-Wtemplate-body]
+[1.027s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.027s]       |                                                 ^~
+[1.027s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:77: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.028s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.028s]       |                                                                             ^~~~~~~
+[1.028s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:100: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.028s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.028s]       |                                                                                                    ^~~~~~~
+[1.029s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In constructor ‘booster_interface::msg::MotorState_<ContainerAllocator>::MotorState_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)’:
+[1.029s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:53:5: error: class ‘booster_interface::msg::MotorState_<ContainerAllocator>’ does not have any field named ‘reserve’ [-Wtemplate-body]
+[1.029s]    53 |   : reserve(_alloc)
+[1.033s]       |     ^~~~~~~
+[1.033s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:64:13: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.033s]    64 |       this->lost = 0ul;
+[1.033s]       |             ^~~~
+[1.034s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:37: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.034s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.034s]       |                                     ^~~~~~~~
+[1.034s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:37: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.034s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:48: error: template argument 1 is invalid [-Wtemplate-body]
+[1.034s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.035s]       |                                                ^
+[1.035s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:49: error: ‘<declaration error>’ is not a template [-Wtemplate-body]
+[1.035s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.035s]       |                                                 ^~
+[1.035s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:77: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.035s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.035s]       |                                                                             ^~~~~~~
+[1.036s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:100: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.036s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.036s]       |                                                                                                    ^~~~~~~
+[1.037s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘booster_interface::msg::MotorState_<ContainerAllocator>::Type& booster_interface::msg::MotorState_<ContainerAllocator>::set__lost(const int&)’:
+[1.037s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:135:11: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.038s]   135 |     this->lost = _arg;
+[1.038s]       |           ^~~~
+[1.038s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘booster_interface::msg::MotorState_<ContainerAllocator>::Type& booster_interface::msg::MotorState_<ContainerAllocator>::set__reserve(const int&)’:
+[1.038s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:141:11: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.038s]   141 |     this->reserve = _arg;
+[1.038s]       |           ^~~~~~~
+[1.039s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘bool booster_interface::msg::MotorState_<ContainerAllocator>::operator==(const booster_interface::msg::MotorState_<ContainerAllocator>&) const’:
+[1.039s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:205:15: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.039s]   205 |     if (this->lost != other.lost) {
+[1.039s]       |               ^~~~
+[1.039s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:205:29: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.039s]   205 |     if (this->lost != other.lost) {
+[1.040s]       |                             ^~~~
+[1.040s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:93:3: error: ‘_reserve_type’ does not name a type [-Wtemplate-body]
+[1.040s]    93 |   _reserve_type reserve;
+[1.040s]       |   ^~~~~~~~~~~~~
+[1.044s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:208:15: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.044s]   208 |     if (this->reserve != other.reserve) {
+[1.044s]       |               ^~~~~~~
+[1.044s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:208:32: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.045s]   208 |     if (this->reserve != other.reserve) {
+[1.045s]       |                                ^~~~~~~
+[1.045s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:133:11: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[1.048s]   133 |     const uint32_t & _arg)
+[1.049s]       |           ^~~~~~~~
+[1.049s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:133:11: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.049s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:22: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.049s]   139 |     const std::array<uint32_t, 2> & _arg)
+[1.049s]       |                      ^~~~~~~~
+[1.050s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:22: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.050s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:33: error: template argument 1 is invalid [-Wtemplate-body]
+[1.050s]   139 |     const std::array<uint32_t, 2> & _arg)
+[1.053s]       |                                 ^
+[1.053s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In constructor ‘booster_interface::msg::MotorState_<ContainerAllocator>::MotorState_(rosidl_runtime_cpp::MessageInitialization)’:
+[1.053s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:47:13: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.054s]    47 |       this->lost = 0ul;
+[1.054s]       |             ^~~~
+[1.054s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:37: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.054s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.054s]       |                                     ^~~~~~~~
+[1.054s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:37: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.055s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:48: error: template argument 1 is invalid [-Wtemplate-body]
+[1.055s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.055s]       |                                                ^
+[1.055s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:49: error: ‘<declaration error>’ is not a template [-Wtemplate-body]
+[1.055s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.056s]       |                                                 ^~
+[1.056s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:77: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.056s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.058s]       |                                                                             ^~~~~~~
+[1.058s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:100: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.059s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.059s]       |                                                                                                    ^~~~~~~
+[1.059s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In constructor ‘booster_interface::msg::MotorState_<ContainerAllocator>::MotorState_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)’:
+[1.059s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:53:5: error: class ‘booster_interface::msg::MotorState_<ContainerAllocator>’ does not have any field named ‘reserve’ [-Wtemplate-body]
+[1.059s]    53 |   : reserve(_alloc)
+[1.059s]       |     ^~~~~~~
+[1.060s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:64:13: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.060s]    64 |       this->lost = 0ul;
+[1.060s]       |             ^~~~
+[1.060s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:37: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.060s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.061s]       |                                     ^~~~~~~~
+[1.061s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:37: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.061s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:48: error: template argument 1 is invalid [-Wtemplate-body]
+[1.067s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.068s]       |                                                ^
+[1.068s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:49: error: ‘<declaration error>’ is not a template [-Wtemplate-body]
+[1.068s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.068s]       |                                                 ^~
+[1.068s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:77: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.069s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.069s]       |                                                                             ^~~~~~~
+[1.069s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:100: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.069s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.069s]       |                                                                                                    ^~~~~~~
+[1.069s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘booster_interface::msg::MotorState_<ContainerAllocator>::Type& booster_interface::msg::MotorState_<ContainerAllocator>::set__lost(const int&)’:
+[1.070s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:135:11: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.070s]   135 |     this->lost = _arg;
+[1.070s]       |           ^~~~
+[1.070s] In file included from /usr/include/time.h:29,
+[1.070s]                  from /usr/include/pthread.h:23,
+[1.070s]                  from /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:35,
+[1.071s]                  from /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr.h:157,
+[1.071s]                  from /usr/include/c++/16.1.1/ext/atomicity.h:37,
+[1.074s]                  from /usr/include/c++/16.1.1/bits/shared_ptr_base.h:61,
+[1.075s]                  from /usr/include/c++/16.1.1/bits/shared_ptr.h:53,
+[1.075s]                  from /usr/include/c++/16.1.1/memory:82,
+[1.075s]                  from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:10:
+[1.075s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/motor_state__type_support.cpp: At global scope:
+[1.076s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/motor_state__type_support.cpp:189:50: error: ‘using booster_interface::msg::MotorState = struct booster_interface::msg::MotorState_<std::allocator<void> >’ {aka ‘struct booster_interface::msg::MotorState_<std::allocator<void> >’} has no member named ‘lost’
+[1.076s]   189 |     offsetof(booster_interface::msg::MotorState, lost),  // bytes offset in struct
+[1.076s]       |                                                  ^~~~
+[1.076s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/motor_state__type_support.cpp:206:50: error: ‘using booster_interface::msg::MotorState = struct booster_interface::msg::MotorState_<std::allocator<void> >’ {aka ‘struct booster_interface::msg::MotorState_<std::allocator<void> >’} has no member named ‘reserve’
+[1.076s]   206 |     offsetof(booster_interface::msg::MotorState, reserve),  // bytes offset in struct
+[1.077s]       |                                                  ^~~~~~~
+[1.077s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘booster_interface::msg::MotorState_<ContainerAllocator>::Type& booster_interface::msg::MotorState_<ContainerAllocator>::set__reserve(const int&)’:
+[1.077s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:141:11: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.077s]   141 |     this->reserve = _arg;
+[1.077s]       |           ^~~~~~~
+[1.077s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘bool booster_interface::msg::MotorState_<ContainerAllocator>::operator==(const booster_interface::msg::MotorState_<ContainerAllocator>&) const’:
+[1.078s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:205:15: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.078s]   205 |     if (this->lost != other.lost) {
+[1.080s]       |               ^~~~
+[1.080s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:205:29: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.080s]   205 |     if (this->lost != other.lost) {
+[1.081s]       |                             ^~~~
+[1.081s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:208:15: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.081s]   208 |     if (this->reserve != other.reserve) {
+[1.081s]       |               ^~~~~~~
+[1.081s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:208:32: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.082s]   208 |     if (this->reserve != other.reserve) {
+[1.082s]       |                                ^~~~~~~
+[1.082s] In file included from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/low_state__struct.hpp:23,
+[1.082s]                  from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/low_state__type_support.cpp:12:
+[1.082s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:89:5: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[1.083s]    89 |     uint32_t;
+[1.083s]       |     ^~~~~~~~
+[1.083s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:1:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.083s]   +++ |+#include <cstdint>
+[1.083s]     1 | // generated from rosidl_generator_cpp/resource/idl__struct.hpp.em
+[1.084s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:90:3: error: ‘_lost_type’ does not name a type; did you mean ‘_mode_type’? [-Wtemplate-body]
+[1.084s]    90 |   _lost_type lost;
+[1.084s]       |   ^~~~~~~~~~
+[1.084s]       |   _mode_type
+[1.084s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:16: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.085s]    92 |     std::array<uint32_t, 2>;
+[1.085s]       |                ^~~~~~~~
+[1.085s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:16: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.085s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:27: error: template argument 1 is invalid [-Wtemplate-body]
+[1.085s]    92 |     std::array<uint32_t, 2>;
+[1.086s]       |                           ^
+[1.086s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:93:3: error: ‘_reserve_type’ does not name a type [-Wtemplate-body]
+[1.086s]    93 |   _reserve_type reserve;
+[1.086s]       |   ^~~~~~~~~~~~~
+[1.086s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:133:11: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[1.087s]   133 |     const uint32_t & _arg)
+[1.087s]       |           ^~~~~~~~
+[1.087s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:133:11: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.087s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:22: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.087s]   139 |     const std::array<uint32_t, 2> & _arg)
+[1.088s]       |                      ^~~~~~~~
+[1.088s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:22: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.088s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:33: error: template argument 1 is invalid [-Wtemplate-body]
+[1.088s]   139 |     const std::array<uint32_t, 2> & _arg)
+[1.088s]       |                                 ^
+[1.089s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In constructor ‘booster_interface::msg::MotorState_<ContainerAllocator>::MotorState_(rosidl_runtime_cpp::MessageInitialization)’:
+[1.089s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:47:13: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.089s]    47 |       this->lost = 0ul;
+[1.089s]       |             ^~~~
+[1.089s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:37: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.090s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.090s]       |                                     ^~~~~~~~
+[1.090s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:37: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.090s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:48: error: template argument 1 is invalid [-Wtemplate-body]
+[1.090s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.091s]       |                                                ^
+[1.091s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:49: error: ‘<declaration error>’ is not a template [-Wtemplate-body]
+[1.091s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.091s]       |                                                 ^~
+[1.091s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:77: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.092s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.092s]       |                                                                             ^~~~~~~
+[1.092s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:100: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.092s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.092s]       |                                                                                                    ^~~~~~~
+[1.093s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In constructor ‘booster_interface::msg::MotorState_<ContainerAllocator>::MotorState_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)’:
+[1.093s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:53:5: error: class ‘booster_interface::msg::MotorState_<ContainerAllocator>’ does not have any field named ‘reserve’ [-Wtemplate-body]
+[1.093s]    53 |   : reserve(_alloc)
+[1.093s]       |     ^~~~~~~
+[1.093s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:64:13: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.094s]    64 |       this->lost = 0ul;
+[1.094s]       |             ^~~~
+[1.094s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:37: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[1.094s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.095s]       |                                     ^~~~~~~~
+[1.095s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:37: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[1.096s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:48: error: template argument 1 is invalid [-Wtemplate-body]
+[1.096s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.096s]       |                                                ^
+[1.097s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:49: error: ‘<declaration error>’ is not a template [-Wtemplate-body]
+[1.097s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.097s]       |                                                 ^~
+[1.097s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:77: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.097s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.098s]       |                                                                             ^~~~~~~
+[1.098s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:100: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.098s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[1.098s]       |                                                                                                    ^~~~~~~
+[1.098s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘booster_interface::msg::MotorState_<ContainerAllocator>::Type& booster_interface::msg::MotorState_<ContainerAllocator>::set__lost(const int&)’:
+[1.099s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:135:11: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.099s]   135 |     this->lost = _arg;
+[1.099s]       |           ^~~~
+[1.099s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘booster_interface::msg::MotorState_<ContainerAllocator>::Type& booster_interface::msg::MotorState_<ContainerAllocator>::set__reserve(const int&)’:
+[1.099s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:141:11: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.099s]   141 |     this->reserve = _arg;
+[1.100s]       |           ^~~~~~~
+[1.100s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘bool booster_interface::msg::MotorState_<ContainerAllocator>::operator==(const booster_interface::msg::MotorState_<ContainerAllocator>&) const’:
+[1.104s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:205:15: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.104s]   205 |     if (this->lost != other.lost) {
+[1.105s]       |               ^~~~
+[1.105s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:205:29: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[1.105s]   205 |     if (this->lost != other.lost) {
+[1.105s]       |                             ^~~~
+[1.105s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:208:15: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.106s]   208 |     if (this->reserve != other.reserve) {
+[1.106s]       |               ^~~~~~~
+[1.106s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:208:32: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[1.106s]   208 |     if (this->reserve != other.reserve) {
+[1.106s]       |                                ^~~~~~~
+[1.106s] [  6%] Built target ament_cmake_python_build_booster_interface_egg
+[1.107s] make[2]: *** [CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/build.make:262: CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/raw_bytes_msg__type_support.cpp.o] Error 1
+[1.107s] make[2]: *** Waiting for unfinished jobs....
+[1.108s] make[2]: *** [CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/build.make:192: CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/motor_state__type_support.cpp.o] Error 1
+[1.123s] [  7%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/odometer__type_support.cpp.o
+[1.126s] make[2]: *** [CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/build.make:157: CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/motor_state__type_support.cpp.o] Error 1
+[1.127s] make[2]: *** Waiting for unfinished jobs....
+[1.195s] make[2]: *** [CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/build.make:248: CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/low_state__type_support.cpp.o] Error 1
+[1.217s] make[1]: *** [CMakeFiles/Makefile2:450: CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[1.217s] make[1]: *** Waiting for unfinished jobs....
+[1.625s] make[1]: *** [CMakeFiles/Makefile2:482: CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/all] Error 2
+[1.971s] [  8%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/imu_state__type_support.cpp.o
+[1.973s] [ 11%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/booster_api_resp_msg__type_support.cpp.o
+[1.973s] [ 11%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp.o
+[1.973s] [ 11%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/booster_api_req_msg__type_support.cpp.o
+[1.973s] [ 12%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_cmd__type_support.cpp.o
+[1.974s] [ 13%] Building CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/low_cmd__type_support.cpp.o
+[2.719s] In file included from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/motor_state__rosidl_typesupport_fastrtps_cpp.hpp:11,
+[2.719s]                  from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp:4:
+[2.719s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:89:5: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[2.719s]    89 |     uint32_t;
+[2.719s]       |     ^~~~~~~~
+[2.719s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:16:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[2.720s]    15 | #include "rosidl_runtime_cpp/message_initialization.hpp"
+[2.720s]   +++ |+#include <cstdint>
+[2.720s]    16 | 
+[2.724s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:90:3: error: ‘_lost_type’ does not name a type; did you mean ‘_mode_type’? [-Wtemplate-body]
+[2.724s]    90 |   _lost_type lost;
+[2.724s]       |   ^~~~~~~~~~
+[2.724s]       |   _mode_type
+[2.724s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:16: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[2.724s]    92 |     std::array<uint32_t, 2>;
+[2.725s]       |                ^~~~~~~~
+[2.725s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:16: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[2.725s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:92:27: error: template argument 1 is invalid [-Wtemplate-body]
+[2.725s]    92 |     std::array<uint32_t, 2>;
+[2.725s]       |                           ^
+[2.729s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:93:3: error: ‘_reserve_type’ does not name a type [-Wtemplate-body]
+[2.729s]    93 |   _reserve_type reserve;
+[2.729s]       |   ^~~~~~~~~~~~~
+[2.730s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:133:11: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[2.730s]   133 |     const uint32_t & _arg)
+[2.730s]       |           ^~~~~~~~
+[2.731s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:133:11: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[2.732s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:22: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[2.732s]   139 |     const std::array<uint32_t, 2> & _arg)
+[2.733s]       |                      ^~~~~~~~
+[2.733s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:22: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[2.733s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:139:33: error: template argument 1 is invalid [-Wtemplate-body]
+[2.733s]   139 |     const std::array<uint32_t, 2> & _arg)
+[2.733s]       |                                 ^
+[2.737s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In constructor ‘booster_interface::msg::MotorState_<ContainerAllocator>::MotorState_(rosidl_runtime_cpp::MessageInitialization)’:
+[2.737s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:47:13: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[2.737s]    47 |       this->lost = 0ul;
+[2.737s]       |             ^~~~
+[2.737s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:37: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[2.738s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[2.738s]       |                                     ^~~~~~~~
+[2.738s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:37: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[2.738s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:48: error: template argument 1 is invalid [-Wtemplate-body]
+[2.738s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[2.738s]       |                                                ^
+[2.739s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:49: error: ‘<declaration error>’ is not a template [-Wtemplate-body]
+[2.742s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[2.742s]       |                                                 ^~
+[2.743s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:77: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[2.743s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[2.743s]       |                                                                             ^~~~~~~
+[2.744s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:48:100: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[2.744s]    48 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[2.744s]       |                                                                                                    ^~~~~~~
+[2.744s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In constructor ‘booster_interface::msg::MotorState_<ContainerAllocator>::MotorState_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)’:
+[2.744s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:53:5: error: class ‘booster_interface::msg::MotorState_<ContainerAllocator>’ does not have any field named ‘reserve’ [-Wtemplate-body]
+[2.744s]    53 |   : reserve(_alloc)
+[2.745s]       |     ^~~~~~~
+[2.745s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:64:13: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[2.745s]    64 |       this->lost = 0ul;
+[2.745s]       |             ^~~~
+[2.745s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:37: error: ‘uint32_t’ was not declared in this scope [-Wtemplate-body]
+[2.745s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[2.745s]       |                                     ^~~~~~~~
+[2.746s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:37: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[2.746s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:48: error: template argument 1 is invalid [-Wtemplate-body]
+[2.746s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[2.746s]       |                                                ^
+[2.746s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:49: error: ‘<declaration error>’ is not a template [-Wtemplate-body]
+[2.746s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[2.746s]       |                                                 ^~
+[2.747s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:77: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[2.747s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[2.747s]       |                                                                             ^~~~~~~
+[2.750s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:65:100: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[2.751s]    65 |       std::fill<typename std::array<uint32_t, 2>::iterator, uint32_t>(this->reserve.begin(), this->reserve.end(), 0ul);
+[2.751s]       |                                                                                                    ^~~~~~~
+[2.751s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘booster_interface::msg::MotorState_<ContainerAllocator>::Type& booster_interface::msg::MotorState_<ContainerAllocator>::set__lost(const int&)’:
+[2.751s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:135:11: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[2.751s]   135 |     this->lost = _arg;
+[2.751s]       |           ^~~~
+[2.751s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘booster_interface::msg::MotorState_<ContainerAllocator>::Type& booster_interface::msg::MotorState_<ContainerAllocator>::set__reserve(const int&)’:
+[2.752s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:141:11: error: ‘struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[2.752s]   141 |     this->reserve = _arg;
+[2.752s]       |           ^~~~~~~
+[2.752s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: In member function ‘bool booster_interface::msg::MotorState_<ContainerAllocator>::operator==(const booster_interface::msg::MotorState_<ContainerAllocator>&) const’:
+[2.752s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:205:15: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[2.752s]   205 |     if (this->lost != other.lost) {
+[2.753s]       |               ^~~~
+[2.753s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:205:29: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘lost’ [-Wtemplate-body]
+[2.753s]   205 |     if (this->lost != other.lost) {
+[2.753s]       |                             ^~~~
+[2.756s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:208:15: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[2.756s]   208 |     if (this->reserve != other.reserve) {
+[2.757s]       |               ^~~~~~~
+[2.757s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp:208:32: error: ‘const struct booster_interface::msg::MotorState_<ContainerAllocator>’ has no member named ‘reserve’ [-Wtemplate-body]
+[2.757s]   208 |     if (this->reserve != other.reserve) {
+[2.757s]       |                                ^~~~~~~
+[2.975s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp: In function ‘bool booster_interface::msg::typesupport_fastrtps_cpp::cdr_serialize(const booster_interface::msg::MotorState&, eprosima::fastcdr::Cdr&)’:
+[2.976s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp:48:22: error: ‘const booster_interface::msg::MotorState’ {aka ‘const struct booster_interface::msg::MotorState_<std::allocator<void> >’} has no member named ‘lost’
+[2.976s]    48 |   cdr << ros_message.lost;
+[2.976s]       |                      ^~~~
+[2.976s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp:51:24: error: ‘const booster_interface::msg::MotorState’ {aka ‘const struct booster_interface::msg::MotorState_<std::allocator<void> >’} has no member named ‘reserve’
+[2.977s]    51 |     cdr << ros_message.reserve;
+[2.977s]       |                        ^~~~~~~
+[2.977s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp: In function ‘bool booster_interface::msg::typesupport_fastrtps_cpp::cdr_deserialize(eprosima::fastcdr::Cdr&, booster_interface::msg::MotorState&)’:
+[2.977s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp:81:22: error: ‘using booster_interface::msg::MotorState = struct booster_interface::msg::MotorState_<std::allocator<void> >’ {aka ‘struct booster_interface::msg::MotorState_<std::allocator<void> >’} has no member named ‘lost’
+[2.978s]    81 |   cdr >> ros_message.lost;
+[2.978s]       |                      ^~~~
+[2.978s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp:85:24: error: ‘using booster_interface::msg::MotorState = struct booster_interface::msg::MotorState_<std::allocator<void> >’ {aka ‘struct booster_interface::msg::MotorState_<std::allocator<void> >’} has no member named ‘reserve’
+[2.978s]    85 |     cdr >> ros_message.reserve;
+[2.978s]       |                        ^~~~~~~
+[2.979s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp: In function ‘size_t booster_interface::msg::typesupport_fastrtps_cpp::get_serialized_size(const booster_interface::msg::MotorState&, size_t)’:
+[2.979s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp:142:43: error: ‘const booster_interface::msg::MotorState’ {aka ‘const struct booster_interface::msg::MotorState_<std::allocator<void> >’} has no member named ‘lost’
+[2.979s]   142 |     size_t item_size = sizeof(ros_message.lost);
+[2.979s]       |                                           ^~~~
+[2.980s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp:149:43: error: ‘const booster_interface::msg::MotorState’ {aka ‘const struct booster_interface::msg::MotorState_<std::allocator<void> >’} has no member named ‘reserve’
+[2.980s]   149 |     size_t item_size = sizeof(ros_message.reserve[0]);
+[2.980s]       |                                           ^~~~~~~
+[2.980s] In file included from /usr/include/strings.h:23,
+[2.980s]                  from /usr/include/string.h:494,
+[2.980s]                  from /opt/ros/humble/include/fastcdr/FastBuffer.h:21,
+[2.981s]                  from /opt/ros/humble/include/fastcdr/Cdr.h:19,
+[2.981s]                  from /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/motor_state__rosidl_typesupport_fastrtps_cpp.hpp:25:
+[2.981s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp: In function ‘size_t booster_interface::msg::typesupport_fastrtps_cpp::max_serialized_size_MotorState(bool&, bool&, size_t)’:
+[2.981s] /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp:255:26: error: ‘using DataType = using booster_interface::msg::MotorState = struct booster_interface::msg::MotorState_<std::allocator<void> >’ {aka ‘struct booster_interface::msg::MotorState_<std::allocator<void> >’} has no member named ‘reserve’
+[2.981s]   255 |       offsetof(DataType, reserve) +
+[2.981s]       |                          ^~~~~~~
+[3.085s] make[2]: *** [CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/build.make:192: CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp.o] Error 1
+[3.087s] make[2]: *** Waiting for unfinished jobs....
+[3.219s] [ 14%] Building C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/booster_api_req_msg__functions.c.o
+[3.221s] [ 15%] Building C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/motor_state__functions.c.o
+[3.232s] [ 16%] Building C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/booster_api_resp_msg__functions.c.o
+[3.320s] make[1]: *** [CMakeFiles/Makefile2:354: CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[3.329s] [ 17%] Building C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/low_cmd__functions.c.o
+[3.331s] [ 18%] Building C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/imu_state__functions.c.o
+[3.333s] [ 19%] Building C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/motor_cmd__functions.c.o
+[3.356s] [ 19%] Building C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/raw_bytes_msg__functions.c.o
+[3.389s] [ 20%] Building C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/low_state__functions.c.o
+[3.389s] [ 21%] Building C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/odometer__functions.c.o
+[3.470s] [ 22%] Building C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/remote_controller_state__functions.c.o
+[3.471s] [ 23%] Building C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/srv/detail/rpc_service__functions.c.o
+[3.589s] [ 24%] Linking C shared library libbooster_interface__rosidl_generator_c.so
+[3.658s] [ 24%] Built target booster_interface__rosidl_generator_c
+[3.659s] make: *** [Makefile:146: all] Error 2
+[3.663s] Invoked command in '/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface' returned '2': DEBUGINFOD_URLS=https://debuginfod.archlinux.org _=/usr/bin/env /usr/bin/cmake --build /home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface -- -j8 -l8

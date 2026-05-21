@@ -1,0 +1,11 @@
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/BoosterApiReqMsg.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/BoosterApiRespMsg.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/MotorState.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/MotorCmd.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/LowCmd.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/ImuState.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/LowState.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/RawBytesMsg.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/Odometer.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:msg/RemoteControllerState.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface/rosidl_adapter/booster_interface:srv/RpcService.idl

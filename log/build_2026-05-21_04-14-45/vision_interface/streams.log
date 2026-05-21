@@ -1,0 +1,230 @@
+[0.012s] Invoking command in '/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface': DEBUGINFOD_URLS=https://debuginfod.archlinux.org _=/usr/bin/env /usr/bin/cmake /home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface -DCMAKE_INSTALL_PREFIX=/home/baro/Downloads/Football/K1_Football_Demo/install/vision_interface
+[0.020s] CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.020s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.020s]   CMake.
+[0.020s] 
+[0.020s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.020s]   to tell CMake that the project requires at least <min> but has been updated
+[0.020s]   to work with policies introduced by <max> or earlier.
+[0.020s] 
+[0.021s] 
+[0.029s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.233s] -- Found Python3: /usr/bin/python3 (found version "3.14.5") found components: Interpreter
+[0.395s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.462s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.471s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.490s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.519s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.557s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.682s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.686s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.864s] -- Found OpenSSL: /usr/lib/libcrypto.so (found version "3.6.2")
+[0.916s] -- Found FastRTPS: /opt/ros/humble/include
+[0.975s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.989s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.182s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.185s] -- Found Threads: TRUE
+[1.303s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.315s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.349s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.365s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.848s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.628s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.631s] CMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[4.631s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.631s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.631s]   the cmake_policy command to set the policy and suppress this warning.
+[4.631s] 
+[4.632s] Call Stack (most recent call first):
+[4.632s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.632s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.632s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[4.632s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.632s] 
+[4.673s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.14.5", minimum required is "3.6")
+[4.675s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.678s] CMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[4.678s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.678s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.678s]   the cmake_policy command to set the policy and suppress this warning.
+[4.679s] 
+[4.679s] Call Stack (most recent call first):
+[4.679s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.679s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.679s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.679s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[4.680s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.680s] 
+[4.715s] CMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[4.716s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.716s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.716s]   the cmake_policy command to set the policy and suppress this warning.
+[4.716s] 
+[4.716s] Call Stack (most recent call first):
+[4.716s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.716s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.717s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.717s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[4.717s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.717s] 
+[4.727s] -- Found PythonLibs: /usr/lib/libpython3.14.so (found suitable version "3.14.5", minimum required is "3.5")
+[4.727s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.727s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.14
+[4.727s] -- Using PYTHON_LIBRARIES: /usr/lib/libpython3.14.so
+[4.776s] -- Found PythonExtra: .so
+[5.207s] -- Using numpy include directory: /usr/lib/python3.14/site-packages/numpy/_core/include
+[5.232s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.254s] -- Added test 'lint_cmake' to check CMake code style
+[5.256s] -- Added test 'xmllint' to check XML markup files
+[5.262s] -- Configuring done (5.2s)
+[5.370s] -- Generating done (0.1s)
+[5.459s] -- Build files have been written to: /home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface
+[5.480s] Invoked command in '/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface' returned '0': DEBUGINFOD_URLS=https://debuginfod.archlinux.org _=/usr/bin/env /usr/bin/cmake /home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface -DCMAKE_INSTALL_PREFIX=/home/baro/Downloads/Football/K1_Football_Demo/install/vision_interface
+[5.481s] Invoking command in '/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface': DEBUGINFOD_URLS=https://debuginfod.archlinux.org _=/usr/bin/env /usr/bin/cmake --build /home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface -- -j8 -l8
+[5.624s] [  0%] Generating C++ code for ROS interfaces
+[8.049s] [  0%] Built target vision_interface__cpp
+[8.091s] [  1%] Generating C code for ROS interfaces
+[8.117s] [  1%] Built target ament_cmake_python_copy_vision_interface
+[9.999s] [  3%] Building C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/detected_object__functions.c.o
+[9.999s] [  3%] Building C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/line_segments__functions.c.o
+[10.000s] [  4%] Building C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/detections__functions.c.o
+[10.156s] [  5%] Building C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/segmentation_point__functions.c.o
+[10.273s] [  6%] Building C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/segmentation_line__functions.c.o
+[10.277s] [  7%] Building C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/detections_track__functions.c.o
+[10.295s] [  8%] Building C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/segmentation_result__functions.c.o
+[10.437s] [  9%] Building C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/ball__functions.c.o
+[10.445s] [ 10%] Building C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/image_head_position__functions.c.o
+[10.573s] [ 11%] Building C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/cal_param__functions.c.o
+[10.665s] [ 12%] Linking C shared library libvision_interface__rosidl_generator_c.so
+[10.732s] [ 12%] Built target vision_interface__rosidl_generator_c
+[11.515s] running egg_info
+[11.516s] creating vision_interface.egg-info
+[11.516s] writing vision_interface.egg-info/PKG-INFO
+[11.516s] writing dependency_links to vision_interface.egg-info/dependency_links.txt
+[11.516s] writing top-level names to vision_interface.egg-info/top_level.txt
+[11.516s] writing manifest file 'vision_interface.egg-info/SOURCES.txt'
+[11.608s] reading manifest file 'vision_interface.egg-info/SOURCES.txt'
+[11.609s] writing manifest file 'vision_interface.egg-info/SOURCES.txt'
+[11.738s] [ 12%] Built target ament_cmake_python_build_vision_interface_egg
+[11.795s] [ 13%] Generating C type support dispatch for ROS interfaces
+[12.780s] [ 14%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/detections__type_support.cpp.o
+[12.781s] [ 15%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/detected_object__type_support.cpp.o
+[12.804s] [ 16%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/line_segments__type_support.cpp.o
+[12.872s] [ 18%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/detections_track__type_support.cpp.o
+[12.872s] [ 18%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/cal_param__type_support.cpp.o
+[12.892s] [ 19%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/segmentation_point__type_support.cpp.o
+[12.943s] [ 20%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/segmentation_line__type_support.cpp.o
+[12.947s] [ 21%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/segmentation_result__type_support.cpp.o
+[12.971s] [ 21%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/image_head_position__type_support.cpp.o
+[13.012s] [ 22%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/ball__type_support.cpp.o
+[13.061s] [ 23%] Linking CXX shared library libvision_interface__rosidl_typesupport_c.so
+[13.186s] [ 23%] Built target vision_interface__rosidl_typesupport_c
+[13.215s] [ 25%] Generating C introspection for ROS interfaces
+[13.215s] [ 25%] Generating C type support for eProsima Fast-RTPS
+[13.219s] [ 26%] Generating C++ introspection for ROS interfaces
+[14.812s] [ 27%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/detected_object__type_support.cpp.o
+[14.835s] [ 28%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/detections__type_support.cpp.o
+[14.835s] [ 30%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/line_segments__type_support.cpp.o
+[14.835s] [ 30%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/cal_param__type_support.cpp.o
+[14.878s] [ 31%] Building C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/detected_object__type_support.c.o
+[15.008s] [ 32%] Building C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/detections__type_support.c.o
+[15.132s] [ 33%] Building C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/line_segments__type_support.c.o
+[15.157s] [ 34%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/detected_object__type_support_c.cpp.o
+[15.235s] [ 35%] Building C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/cal_param__type_support.c.o
+[15.329s] [ 36%] Building C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/detections_track__type_support.c.o
+[15.415s] In file included from /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:20,
+[15.415s]                  from /home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_generator_cpp/vision_interface/msg/detail/detections__struct.hpp:20,
+[15.415s]                  from /home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/detections__type_support.cpp:12:
+[15.416s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:62:5: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[15.416s]    62 |     uint32_t;
+[15.416s]       |     ^~~~~~~~
+[15.416s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:1:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[15.416s]   +++ |+#include <cstdint>
+[15.416s]     1 | // generated from rosidl_generator_cpp/resource/idl__struct.hpp.em
+[15.418s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:63:3: error: ‘_nanosec_type’ does not name a type; did you mean ‘_sec_type’? [-Wtemplate-body]
+[15.418s]    63 |   _nanosec_type nanosec;
+[15.418s]       |   ^~~~~~~~~~~~~
+[15.419s]       |   _sec_type
+[15.419s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:73:11: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[15.420s]    73 |     const uint32_t & _arg)
+[15.420s]       |           ^~~~~~~~
+[15.420s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:73:11: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[15.420s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In constructor ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Time_(rosidl_runtime_cpp::MessageInitialization)’:
+[15.420s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:42:13: error: ‘struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+[15.421s]    42 |       this->nanosec = 0ul;
+[15.421s]       |             ^~~~~~~
+[15.421s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In constructor ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Time_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)’:
+[15.421s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:53:13: error: ‘struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+[15.421s]    53 |       this->nanosec = 0ul;
+[15.422s]       |             ^~~~~~~
+[15.422s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In member function ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Type& builtin_interfaces::msg::Time_<ContainerAllocator>::set__nanosec(const int&)’:
+[15.422s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:75:11: error: ‘struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+[15.422s]    75 |     this->nanosec = _arg;
+[15.422s]       |           ^~~~~~~
+[15.423s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In member function ‘bool builtin_interfaces::msg::Time_<ContainerAllocator>::operator==(const builtin_interfaces::msg::Time_<ContainerAllocator>&) const’:
+[15.423s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:124:15: error: ‘const struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+[15.423s]   124 |     if (this->nanosec != other.nanosec) {
+[15.423s]       |               ^~~~~~~
+[15.423s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:124:32: error: ‘const struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+[15.423s]   124 |     if (this->nanosec != other.nanosec) {
+[15.424s]       |                                ^~~~~~~
+[15.457s] [ 37%] Building C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/segmentation_point__type_support.c.o
+[15.556s] [ 38%] Building C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/segmentation_line__type_support.c.o
+[15.561s] In file included from /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:20,
+[15.561s]                  from /home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_generator_cpp/vision_interface/msg/detail/line_segments__struct.hpp:20,
+[15.562s]                  from /home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/line_segments__type_support.cpp:12:
+[15.562s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:62:5: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[15.563s]    62 |     uint32_t;
+[15.563s]       |     ^~~~~~~~
+[15.566s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:1:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[15.566s]   +++ |+#include <cstdint>
+[15.566s]     1 | // generated from rosidl_generator_cpp/resource/idl__struct.hpp.em
+[15.566s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:63:3: error: ‘_nanosec_type’ does not name a type; did you mean ‘_sec_type’? [-Wtemplate-body]
+[15.566s]    63 |   _nanosec_type nanosec;
+[15.567s]       |   ^~~~~~~~~~~~~
+[15.567s]       |   _sec_type
+[15.567s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:73:11: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+[15.567s]    73 |     const uint32_t & _arg)
+[15.567s]       |           ^~~~~~~~
+[15.567s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:73:11: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+[15.568s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In constructor ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Time_(rosidl_runtime_cpp::MessageInitialization)’:
+[15.568s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:42:13: error: ‘struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+[15.568s]    42 |       this->nanosec = 0ul;
+[15.568s]       |             ^~~~~~~
+[15.568s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In constructor ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Time_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)’:
+[15.569s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:53:13: error: ‘struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+[15.569s]    53 |       this->nanosec = 0ul;
+[15.569s]       |             ^~~~~~~
+[15.569s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In member function ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Type& builtin_interfaces::msg::Time_<ContainerAllocator>::set__nanosec(const int&)’:
+[15.569s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:75:11: error: ‘struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+[15.570s]    75 |     this->nanosec = _arg;
+[15.570s]       |           ^~~~~~~
+[15.570s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In member function ‘bool builtin_interfaces::msg::Time_<ContainerAllocator>::operator==(const builtin_interfaces::msg::Time_<ContainerAllocator>&) const’:
+[15.570s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:124:15: error: ‘const struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+[15.571s]   124 |     if (this->nanosec != other.nanosec) {
+[15.571s]       |               ^~~~~~~
+[15.571s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:124:32: error: ‘const struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+[15.571s]   124 |     if (this->nanosec != other.nanosec) {
+[15.571s]       |                                ^~~~~~~
+[15.580s] [ 39%] Building C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/segmentation_result__type_support.c.o
+[15.581s] make[2]: *** [CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/build.make:261: CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/detections__type_support.cpp.o] Error 1
+[15.581s] make[2]: *** Waiting for unfinished jobs....
+[15.623s] [ 40%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/line_segments__type_support_c.cpp.o
+[15.629s] [ 41%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/detections__type_support_c.cpp.o
+[15.665s] [ 42%] Building C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/image_head_position__type_support.c.o
+[15.699s] make[2]: *** [CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/build.make:275: CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/line_segments__type_support.cpp.o] Error 1
+[15.737s] make[1]: *** [CMakeFiles/Makefile2:450: CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[15.737s] make[1]: *** Waiting for unfinished jobs....
+[15.755s] [ 44%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/cal_param__type_support_c.cpp.o
+[15.755s] [ 44%] Building C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/ball__type_support.c.o
+[15.755s] [ 45%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/detections_track__type_support_c.cpp.o
+[15.843s] [ 46%] Linking C shared library libvision_interface__rosidl_typesupport_introspection_c.so
+[15.941s] [ 46%] Built target vision_interface__rosidl_typesupport_introspection_c
+[15.964s] [ 47%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/segmentation_point__type_support_c.cpp.o
+[16.119s] [ 48%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/segmentation_line__type_support_c.cpp.o
+[16.400s] [ 49%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/segmentation_result__type_support_c.cpp.o
+[16.512s] [ 50%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/image_head_position__type_support_c.cpp.o
+[16.768s] [ 51%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/ball__type_support_c.cpp.o
+[17.408s] [ 52%] Linking CXX shared library libvision_interface__rosidl_typesupport_fastrtps_c.so
+[17.493s] [ 52%] Built target vision_interface__rosidl_typesupport_fastrtps_c
+[17.494s] make: *** [Makefile:146: all] Error 2

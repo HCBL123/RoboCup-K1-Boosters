@@ -1,0 +1,1 @@
+Invoking command in '/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs': DEBUGINFOD_URLS=https://debuginfod.archlinux.org _=/usr/bin/env /usr/bin/cmake /home/baro/Downloads/Football/K1_Football_Demo/src/booster_msgs -DCMAKE_INSTALL_PREFIX=/home/baro/Downloads/Football/K1_Football_Demo/install/booster_msgs

@@ -1,0 +1,43 @@
+[  0%] Built target vision_interface__cpp
+[  0%] Built target ament_cmake_python_copy_vision_interface
+[  1%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/detections__type_support.cpp.o
+[  2%] Building CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/segmentation_point__type_support.cpp.o
+In file included from /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:20,
+                 from /home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_generator_cpp/vision_interface/msg/detail/detections__struct.hpp:20,
+                 from /home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/detections__type_support.cpp:12:
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:62:5: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+   62 |     uint32_t;
+      |     ^~~~~~~~
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:1:1: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+  +++ |+#include <cstdint>
+    1 | // generated from rosidl_generator_cpp/resource/idl__struct.hpp.em
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:63:3: error: ‘_nanosec_type’ does not name a type; did you mean ‘_sec_type’? [-Wtemplate-body]
+   63 |   _nanosec_type nanosec;
+      |   ^~~~~~~~~~~~~
+      |   _sec_type
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:73:11: error: ‘uint32_t’ does not name a type [-Wtemplate-body]
+   73 |     const uint32_t & _arg)
+      |           ^~~~~~~~
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:73:11: note: ‘uint32_t’ is defined in header ‘<cstdint>’; this is probably fixable by adding ‘#include <cstdint>’
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In constructor ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Time_(rosidl_runtime_cpp::MessageInitialization)’:
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:42:13: error: ‘struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+   42 |       this->nanosec = 0ul;
+      |             ^~~~~~~
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In constructor ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Time_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)’:
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:53:13: error: ‘struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+   53 |       this->nanosec = 0ul;
+      |             ^~~~~~~
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In member function ‘builtin_interfaces::msg::Time_<ContainerAllocator>::Type& builtin_interfaces::msg::Time_<ContainerAllocator>::set__nanosec(const int&)’:
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:75:11: error: ‘struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+   75 |     this->nanosec = _arg;
+      |           ^~~~~~~
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp: In member function ‘bool builtin_interfaces::msg::Time_<ContainerAllocator>::operator==(const builtin_interfaces::msg::Time_<ContainerAllocator>&) const’:
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:124:15: error: ‘const struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+  124 |     if (this->nanosec != other.nanosec) {
+      |               ^~~~~~~
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:124:32: error: ‘const struct builtin_interfaces::msg::Time_<ContainerAllocator>’ has no member named ‘nanosec’ [-Wtemplate-body]
+  124 |     if (this->nanosec != other.nanosec) {
+      |                                ^~~~~~~
+make[2]: *** [CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/build.make:261: CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/detections__type_support.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:450: CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

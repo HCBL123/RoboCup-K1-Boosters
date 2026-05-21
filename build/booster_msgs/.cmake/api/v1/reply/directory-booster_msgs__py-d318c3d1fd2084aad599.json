@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "booster_msgs__py",
+		"source" : "/home/baro/Downloads/Football/K1_Football_Demo/build/booster_msgs/booster_msgs__py"
+	}
+}

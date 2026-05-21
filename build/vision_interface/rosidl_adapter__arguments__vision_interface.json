@@ -1,0 +1,15 @@
+{
+  "package_name": "vision_interface",
+  "non_idl_tuples": [
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface:msg/DetectedObject.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface:msg/Detections.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface:msg/LineSegments.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface:msg/CalParam.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface:msg/DetectionsTrack.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface:msg/SegmentationPoint.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface:msg/SegmentationLine.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface:msg/SegmentationResult.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface:msg/ImageHeadPosition.msg",
+    "/home/baro/Downloads/Football/K1_Football_Demo/src/robocup_ros2_interface/src/vision_interface:msg/Ball.msg"
+  ]
+}

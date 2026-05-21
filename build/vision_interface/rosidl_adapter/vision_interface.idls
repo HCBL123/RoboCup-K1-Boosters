@@ -1,0 +1,10 @@
+/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_adapter/vision_interface:msg/DetectedObject.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_adapter/vision_interface:msg/Detections.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_adapter/vision_interface:msg/LineSegments.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_adapter/vision_interface:msg/CalParam.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_adapter/vision_interface:msg/DetectionsTrack.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_adapter/vision_interface:msg/SegmentationPoint.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_adapter/vision_interface:msg/SegmentationLine.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_adapter/vision_interface:msg/SegmentationResult.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_adapter/vision_interface:msg/ImageHeadPosition.idl
+/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/rosidl_adapter/vision_interface:msg/Ball.idl

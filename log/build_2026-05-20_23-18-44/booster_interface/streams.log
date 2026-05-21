@@ -1,0 +1,41 @@
+[0.011s] Invoking command in '/home/baro/Downloads/Football/K1_Football_Demo/build/booster_interface': DEBUGINFOD_URLS=https://debuginfod.archlinux.org _=/usr/bin/env /usr/bin/cmake /home/baro/Downloads/Football/K1_Football_Demo/src/booster_ros2_interface -DCMAKE_INSTALL_PREFIX=/home/baro/Downloads/Football/K1_Football_Demo/install/booster_interface
+[0.031s] CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.031s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.031s]   CMake.
+[0.031s] 
+[0.031s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.031s]   to tell CMake that the project requires at least <min> but has been updated
+[0.031s]   to work with policies introduced by <max> or earlier.
+[0.031s] 
+[0.032s] 
+[0.098s] -- The C compiler identification is GNU 16.1.1
+[0.269s] -- The CXX compiler identification is GNU 16.1.1
+[0.280s] -- Detecting C compiler ABI info
+[0.383s] -- Detecting C compiler ABI info - done
+[0.403s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.403s] -- Detecting C compile features
+[0.404s] -- Detecting C compile features - done
+[0.422s] -- Detecting CXX compiler ABI info
+[0.579s] -- Detecting CXX compiler ABI info - done
+[0.609s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.610s] -- Detecting CXX compile features
+[0.611s] -- Detecting CXX compile features - done
+[0.649s] CMake Error at CMakeLists.txt:9 (find_package):
+[0.649s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.649s]   has asked CMake to find a package configuration file provided by
+[0.649s]   "ament_cmake", but CMake did not find one.
+[0.649s] 
+[0.650s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.650s]   any of the following names:
+[0.650s] 
+[0.650s]     ament_cmake.cps
+[0.650s]     ament_cmakeConfig.cmake
+[0.651s]     ament_cmake-config.cmake
+[0.651s] 
+[0.651s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.651s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.652s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.653s]   has been installed.
+[0.653s] 
+[0.653s] 
+[0.653s] -- Configuring incomplete, errors occurred!

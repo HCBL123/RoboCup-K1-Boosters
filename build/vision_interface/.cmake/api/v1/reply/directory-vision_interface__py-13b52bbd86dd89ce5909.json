@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "vision_interface__py",
+		"source" : "/home/baro/Downloads/Football/K1_Football_Demo/build/vision_interface/vision_interface__py"
+	}
+}

@@ -59,7 +59,7 @@ private:
     int board_h_ = 0;
     float board_square_size_ = 0.05;
     std::string calibration_mode_ = "handeye";
-    std::string camera_type_ = "";
+    std::string camera_type_ = "d-robotics"; // FIX
     int sync_time_diff_ms_ = 1500; // ms
 
     std::string input_cfg_path_;
@@ -171,8 +171,8 @@ void CalibrationNode::Init(const std::string cfg_path, bool is_offline, std::str
         intrin_topic = "/camera/color/camera_info";
     } else {
         // realsense
-        color_topic = "/camera/camera/color/image_raw";
-        intrin_topic = "/camera/camera/color/camera_info";
+        color_topic = "/image_left_raw"";
+        intrin_topic = "image_left_raw/camera_info";
     }
 
     it_ = std::make_shared<image_transport::ImageTransport>(shared_from_this());
